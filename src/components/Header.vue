@@ -14,7 +14,7 @@
                      Discover
                   </router-link>
                </li>
-               <li class="dropdown">
+               <!-- <li class="dropdown">
                   <a href="library.html">Library</a>
                   <ul class="dropdown-menu">
                      <li><a href="futuristic.html"><img src="../assets/images/Futuristic.png" alt="Futuristic"></a></li>
@@ -25,7 +25,7 @@
                      <li><a href="funny.html"><img src="../assets/images/Funny.png" alt="Funny"></a></li>
                      <li><a href="romantic.html"><img src="../assets/images/Romantic.png" alt="Romantic"></a></li>
                   </ul>
-               </li>
+               </li> -->
                <li>
                   <router-link :to="{ name: 'custom_music' }">
                      Custom music
@@ -35,9 +35,9 @@
                   <router-link :to="{ name: 'about' }">
                      The studios
                   </router-link>
-                  <ul class="dropdown-menu">
+                  <!-- <ul class="dropdown-menu">
                      <li><a href="#">About us</a></li>
-                  </ul>
+                  </ul> -->
                </li>
                <li>
                   <router-link :to="{ name: 'contact' }">

@@ -369,7 +369,6 @@ button {
 .banner_section {
     width: 100%;
     text-align: center;
-    padding-top: px;
 }
 
 .banner_taital {
@@ -1175,11 +1174,11 @@ button {
     float: left;
 }
 
-.container_custom {
+ .container_custom {
     width: 100%;
     float: left;
     padding-bottom: 10px;
-}
+} 
 
 
 /* Page loading */

@@ -3,8 +3,10 @@ import Header from '@/components/Header.vue';
 </script>
 
 <template>
-    <div class="page"><img class="bg_image" src="../assets/images/banner-bg.png">
-
+    <div class="page">
+        <!-- Image de fond -->
+        <img class="bg_image" src="../assets/images/banner-bg.png">
+        <!-- Menu -->
         <Header></Header>
 
         <br>

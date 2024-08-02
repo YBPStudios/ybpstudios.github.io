@@ -165,7 +165,7 @@ a,
     transition: all .3s ease-in-out;
 }
 
-hr.solid {
+.solid {
     border-top: 3px solid #fda400;
 }
 
@@ -247,7 +247,7 @@ button {
     overflow: hidden;
 }
 
-.header_main {
+/* .header_main {
     width: 100%;
     object-fit: contain;
     position: relative;
@@ -256,7 +256,7 @@ button {
     align-items: center;
     padding-top: 20px;
     z-index: 1;
-}
+} */
 
 .bg_image {
     top: 0;
@@ -1086,11 +1086,11 @@ button {
 }
 
 
-.container_head {
+/* .container_head {
     width: 100%;
     display: block;
     z-index: 1;
-}
+} */
 
 .logo {
     display: flex;

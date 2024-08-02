@@ -3,22 +3,40 @@
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+/* @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@font-face {
-    font-family: "Futura";
-    src: url("../fonts/futura/FUTURA45LIGHT.TTF");
-    src: url("../fonts/futura/FUTURA46LIGHTITALIC.TTF");
-    src: url("../fonts/futura/FUTURA55REGULAR.TTF");
-    src: url("../fonts/futura/FUTURA56ITALIC.TTF");
-    src: url("../fonts/futura/FUTURA65MEDIUM.TTF");
-    src: url("../fonts/futura/FUTURA66MEDIUMITALIC.TTF");
-    src: url("../fonts/futura/FUTURA75BOLD.TTF");
-    src: url("../fonts/futura/FUTURA76BOLDITALIC.TTF");
-    font-weight: normal;
-    font-style: normal;
-}
 
+/* @font-face {
+    font-family: "Futura";
+    src: local("FuturaPTBold");
+    src: local("FuturaPTBoldOblique");
+    src: local("FuturaPTBook");
+    src: local("FuturaPTBookOblique");
+    src: local("FuturaPTCondBold");
+    src: local("FuturaPTCondBoldOblique");
+    src: local("FuturaPTCondBook");
+    src: local("FuturaPTCondBookOblique");
+    src: local("FuturaPTCondExtraBold");
+    src: local("FuturaPTCondExtraBoldOblique");
+    src: local("FuturaPTCondMedium");
+    src: local("FuturaPTCondMediumOblique");
+    src: local("FuturaPTDemi");
+    src: local("FuturaPTDemiOblique");
+    src: local("FuturaPTExtraBold");
+    src: local("FuturaPTExtraBoldOblique");
+    src: local("FuturaPTHeavy");
+    src: local("FuturaPTHeavyOblique");
+    src: local("FuturaPTLight");
+    src: local("FuturaPTLightOblique");
+    src: local("FuturaPTMedium");
+    src: local("FuturaPTMediumOblique");
+} */
+
+@font-face {
+    font-family: "Nippo";
+    src: local("Nippo-Variable.ttf"),
+    url('../fonts/Nippo-Variable.ttf');
+}
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
@@ -27,7 +45,7 @@
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
-@import url(animate.min.css);
+/* @import url(animate.min.css);
 @import url(normalize.css);
 @import url(icomoon.css);
 @import url(css/font-awesome.min.css);
@@ -37,7 +55,7 @@
 @import url(slick.css);
 @import url(jquery.fancybox.min.css);
 @import url(jquery-ui.css);
-@import url(nice-select.css);
+@import url(nice-select.css); */
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -56,7 +74,7 @@ body {
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Nippo', sans-serif;
 }
 
 a {
@@ -87,27 +105,28 @@ h6 {
 }
 
 h1 {
-    font-size: 24px
+    font-size: 24px;
+    font-family: 'Nippo', sans-serif;
 }
 
 h2 {
-    font-size: 22px
+    font-size: 22px;
 }
 
 h3 {
-    font-size: 18px
+    font-size: 18px;
 }
 
 h4 {
-    font-size: 16px
+    font-size: 16px;
 }
 
 h5 {
-    font-size: 14px
+    font-size: 14px;
 }
 
 h6 {
-    font-size: 13px
+    font-size: 13px;
 }
 
 *,
@@ -126,7 +145,7 @@ h5 a,
 h6 a {
     color: #212121;
     text-decoration: none!important;
-    opacity: 1
+    opacity: 1;
 }
 
 button:focus {
@@ -139,6 +158,7 @@ ol {
     margin: 0px;
     padding: 0px;
     list-style: none;
+    font-family: 'Nippo', sans-serif;
 }
 
 p {
@@ -146,6 +166,7 @@ p {
     font-weight: 300;
     font-size: 15px;
     line-height: 24px;
+    font-family: 'Nippo', sans-serif;
 }
 
 a {
@@ -380,16 +401,16 @@ button {
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Futura', Regular;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .banner_text {
     width: 63%;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .read_bt {

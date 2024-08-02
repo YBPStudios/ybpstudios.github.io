@@ -15,10 +15,9 @@ import Header from '@/components/Header.vue';
         <div class="banner_section layout_padding">
             <div class="container_custom">
                 <h1 class="banner_taital">The future of original music</h1>
-                <p class="banner_text">“So long as the human spirit thrives on this planet, music in some living form
-                    will accompany and sustain it.” Aaron Copland</p>
-                <p class="banner_text">“I should be sorry if I only entertained them. I wish to make them better.” Georg
-                    Frideric Handel</p>
+                <p class="banner_text"><i>“So long as the human spirit thrives on this planet,<br>music in some living form
+                    will accompany and sustain it.”</i><br><strong>Aaron Copland</strong></p>
+                <p class="banner_text"><i>“I should be sorry if I only entertained them. I wish to make them better.”</i><br><strong>Georg Frideric Handel</strong></p>
                 <div class="read_bt">
                     <a class="nav-link" href="custom_music.html">Custom Music</a>
                 </div>

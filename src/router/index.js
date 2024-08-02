@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Discover from '@/views/Discover.vue'
+import Discover from '@/views/Home.vue'
 import CustomMusic from '@/views/CustomMusic.vue'
 import Contact from '@/views/Contact.vue'
 import About from '@/views/About.vue'

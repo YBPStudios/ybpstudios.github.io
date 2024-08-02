@@ -1,30 +1,26 @@
 <script setup>
 import Header from '@/components/Header.vue';
+import CarouselCard from '@/components/CarouselCard.vue';
 </script>
 
 <template>
-    <div class="container-fluid p-0 bg-black">
-        <div class="container-fluid p-0" id="page">
+    <div class="container-fluid p-0" id="home">
+        <div class="container-fluid p-0" id="background">
             <div class="container_brightness">
-                <!-- Image de fond -->
-                <!-- <img class="image-fluid" id="bg_image" src="../assets/images/banner-bg.png"> -->
                 <!-- Menu -->
-                <Header></Header>
-                <br>
+                <Header />
                 <!-- banner section start -->
-                <div class="layout_padding">
-                    <div class="container_custom">
-                        <h1 class="banner_taital">The future of original music</h1>
-                        <p class="banner_text">“So long as the human spirit thrives on this planet, music in some living
-                            form
-                            will accompany and sustain it.” Aaron Copland</p>
-                        <p class="banner_text">“I should be sorry if I only entertained them. I wish to make them
-                            better.”
-                            Georg
-                            Frideric Handel</p>
-                        <div class="read_bt row align-items-end pb-2">
-                            <a class="nav-link col-2 mx-auto" href="custom_music.html">Custom Music</a>
-                        </div>
+                <div class="container-fluid px-0 layout_padding">
+                    <h1 class="banner_title">The future of original music</h1>
+                    <p class="banner_text">“So long as the human spirit thrives on this planet, music in some living
+                        form
+                        will accompany and sustain it.” Aaron Copland</p>
+                    <p class="banner_text">“I should be sorry if I only entertained them. I wish to make them
+                        better.”
+                        Georg
+                        Frideric Handel</p>
+                    <div class="read_bt row align-items-end pb-2">
+                        <a class="nav-link col-2 mx-auto" href="custom_music.html">Custom Music</a>
                     </div>
                 </div>
                 <!-- banner section end -->
@@ -35,35 +31,11 @@ import Header from '@/components/Header.vue';
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <!-- about section start -->
-                        <div class="about_section p-2">
-                            <div class="container_about">
-
-                                <div class="col-md-6 mx-auto">
-                                    <h1 class="about_taital">About Us</h1>
-                                    <p class="about_text">Hey, we're two crazy young french composers who want to reach
-                                        success !
-                                    </p>
-                                    <div class="readmore_bt"><a href="#">Read More</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- about section end -->
+                        <CarouselCard title="About Us" message="Hey, we're two crazy young french composers who want to reach
+                                        success !" />
                     </div>
                     <div class="carousel-item">
-                        <!-- custom music section start -->
-                        <div class="services_section p-2">
-                            <div class="container_custom">
-                                <div class="col-md-6 mx-auto">
-                                    <div class="services_taital">
-                                        <h1>Custom your music</h1>
-                                        <p class="about_text">Get your own music for your project !</p>
-                                        <div class="readmore_bt"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- custom music section end -->
+                        <CarouselCard title="Custom your music" message="Get your own music for your project !" />
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -80,3 +52,15 @@ import Header from '@/components/Header.vue';
         </div>
     </div>
 </template>
+
+<style scoped>
+#home {
+background-color: black;
+}
+
+#background {
+    /* height: 1000px; */
+    background-image: url(../assets/images/banner-bg.png);
+    background-size: cover;
+}
+</style>

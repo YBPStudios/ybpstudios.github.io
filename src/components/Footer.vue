@@ -1,5 +1,4 @@
 <template>
-
    <div class="footer_section pt-5">
       <div class="container-fluid p-0">
          <div class="input_btn_main">
@@ -24,11 +23,4 @@
          </div>
       </div>
    </div>
-
 </template>
-
-<script>
-export default {
-   name: "Footer",
-};
-</script>

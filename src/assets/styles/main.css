@@ -35,7 +35,7 @@
 @font-face {
     font-family: "Nippo";
     src: local("Nippo-Variable.ttf"),
-    url('../fonts/Nippo-Variable.ttf');
+        url('../fonts/Nippo-Variable.ttf');
 }
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
@@ -45,6 +45,7 @@
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
+/* @import url(animate.min.css);
 /* @import url(animate.min.css);
 @import url(normalize.css);
 @import url(icomoon.css);
@@ -59,22 +60,33 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
-* {
+/* * {
     box-sizing: border-box !important;
     transition: ease all 0.5s;
-}
+} */
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
+    min-width: 1000px;
     color: #666666;
     font-size: 14px;
     line-height: 1.80857;
     font-weight: normal;
-    overflow-x: hidden;
     font-family: 'Nippo', sans-serif;
+    overflow-x: hidden;
+}
+
+#page {
+    /* height: 1000px; */
+    background-image: url(../images/banner-bg.png);
+    background-size: cover;
+}
+
+.container_brightness {
+    backdrop-filter: brightness(60%);
 }
 
 a {
@@ -129,13 +141,13 @@ h6 {
     font-size: 13px;
 }
 
-*,
+/* *,
 *::after,
 *::before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
+} */
 
 h1 a,
 h2 a,
@@ -144,7 +156,7 @@ h4 a,
 h5 a,
 h6 a {
     color: #212121;
-    text-decoration: none!important;
+    text-decoration: none !important;
     opacity: 1;
 }
 
@@ -186,8 +198,8 @@ a,
     transition: all .3s ease-in-out;
 }
 
-.solid {
-    border-top: 3px solid #fda400;
+#solid {
+    color: #fda400;
 }
 
 img {
@@ -195,7 +207,7 @@ img {
     height: auto;
 }
 
- :focus {
+:focus {
     outline: 0;
 }
 
@@ -249,10 +261,10 @@ button {
     width: 100%;
 }
 
-.layout_padding {
+/* .layout_padding {
     padding-top: 150px;
     padding-bottom: 50px;
-}
+} */
 
 .padding_0 {
     padding: 0px;
@@ -264,7 +276,7 @@ button {
 .page {
     width: 100%;
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
 }
 
@@ -279,16 +291,15 @@ button {
     z-index: 1;
 } */
 
-.bg_image {
-    top: 0;
-    left: 0;
+.image-fluid {
     z-index: -1;
-    width: 100%;
-    height: 100%;
     position: absolute;
-    filter: blur(2.5px);
-    object-fit: cover;
-    filter: brightness(60%);
+    /* filter: brightness(60%); */
+}
+
+#bg_image {
+    min-height: 500px;
+    min-width: 1000px;
 }
 
 .bg-light {
@@ -341,7 +352,7 @@ button {
     text-align: center;
 }
 
-.menu_main ul {
+ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -375,22 +386,22 @@ button {
     transform: scale(1.1);
 }
 
-.mb-lg-0,
+/* .mb-lg-0,
 .my-lg-0 {
     margin-bottom: 0!important;
     width: 20%;
     float: left;
-}
+} */
 
 /* header section end */
 
 
 /* banner section start */
 
-.banner_section {
+/* .banner_section {
     width: 100%;
     text-align: center;
-}
+} */
 
 .banner_taital {
     background-color: rgba(0, 0, 0, 0.5);
@@ -405,7 +416,7 @@ button {
 }
 
 .banner_text {
-    width: 63%;
+    /* width: 63%; */
     margin: 0 auto;
     font-size: 18px;
     color: #ffffff;
@@ -414,22 +425,23 @@ button {
 }
 
 .read_bt {
-    width: 200px;
-    margin: 0 auto;
+    height: 150px;
+    /* margin: 0 auto;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 150px; */
 }
 
 .read_bt a {
-    width: 100%;
-    float: left;
+    height: 47px;
+    /* width: 100%; */
+    /* float: left; */
     font-size: 16px;
     color: #141414;
     background-color: #ffffff;
     text-align: center;
     padding: 10px 0px;
     border-radius: 30px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     font-weight: 400;
 }
 
@@ -444,13 +456,13 @@ button {
 
 /* services section start */
 
-.services_section {
+/* .services_section {
     position: flex;
     width: 100%;
     float: left;
     padding-top: 150px;
     padding-left: 100px;
-}
+} */
 
 .services_taital {
     width: 100%;
@@ -516,11 +528,11 @@ button {
 
 /* about section start */
 
-.about_section {
+/* .about_section {
     width: 100%;
     float: left;
     display: flex;
-}
+} */
 
 .about_taital_main {
     width: 100%;
@@ -645,15 +657,17 @@ button {
         transform: translate(-50%, -50%) scale(1);
         opacity: 1
     }
+
     100% {
         transform: translate(-50%, -50%) scale(1.2);
         opacity: 0;
     }
 }
 
-.margin_top_90{
+.margin_top_90 {
     margin-top: 90px;
 }
+
 /* library section end */
 
 
@@ -873,6 +887,7 @@ button {
     width: 100%;
     float: left;
 }
+
 .contact_taital {
     width: 100%;
     float: left;
@@ -881,12 +896,14 @@ button {
     text-align: center;
     font-weight: bold;
 }
+
 .email_text {
     width: 70%;
     margin: 0 auto;
     text-align: center;
     padding-top: 120px;
 }
+
 .email-bt {
     width: 100%;
     float: left;
@@ -897,6 +914,7 @@ button {
     border: 0px;
     border: 1px solid #2b2278 !important;
 }
+
 .massage-bt {
     width: 100%;
     float: left;
@@ -907,11 +925,13 @@ button {
     border: 0px;
     border: 1px solid #2b2278 !important;
 }
+
 .send_btn {
     width: 170px;
     margin: 0 auto;
     text-align: center;
 }
+
 .send_btn a {
     width: 100%;
     float: right;
@@ -922,10 +942,12 @@ button {
     background-color: #000d10;
     padding: 7px;
 }
+
 .send_btn a:hover {
     color: #ffffff;
     background-color: #5b2d97;
 }
+
 /* contact section end */
 
 
@@ -935,12 +957,16 @@ button {
 .footer_section {
     background-color: #000;
     z-index: -1;
-    width: 100%;
-    background-image: url(../images/footer-bg.png);
-    padding-top: 250px;
-    background-size: 100% 100%;
+    /* width: 100%; */
+    /* padding-top: 250px; */
+    background-size: cover;
     padding-bottom: 30px;
     background-repeat: no-repeat;
+}
+
+.footer-background {
+    background-image: url(../images/footer-bg.png);
+    background-size: cover;
 }
 
 .input_btn_main {
@@ -1004,8 +1030,8 @@ button {
 }
 
 .location_main {
-    width: 100%;
-    margin: 0 auto;
+    /* width: 100%; */
+    /* margin: 0 auto; */
     text-align: center;
     padding-top: 40px;
 }
@@ -1067,13 +1093,23 @@ button {
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeOut {
-    from {opacity: 1;}
-    to {opacity: 0;}
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 /* tableaux */
@@ -1190,16 +1226,14 @@ button {
 /* Margin and width for other elements */
 .mb-lg-0,
 .my-lg-0 {
-    margin-bottom: 0!important;
+    margin-bottom: 0 !important;
     width: 20%;
     float: left;
 }
 
- .container_custom {
-    width: 100%;
-    float: left;
+.container_custom {
     padding-bottom: 10px;
-} 
+}
 
 
 /* Page loading */

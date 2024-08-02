@@ -2,17 +2,18 @@
 
 <template>
    <!-- Le container prend toute la place possible et s'adapte à la taille de l'écran -->
-   <div class="container-fluid">
+   <div class="container-fluid" id="header">
       <!-- Tous les éléments sont organisés par lignes -->
       <div class="row">
-         <div class="col col-3 mx-auto pt-4">
+         <div class="col-3 mx-auto pt-4">
             <img src="../assets/images/YBP_head_logo.png">
          </div>
       </div>
+
       <div class="row">
-         <div class="col col-4 mx-auto pt-2">
-            <hr class="solid">
-         </div>        
+         <div class="col-4 mx-auto g-4">
+            <hr class="border-2 opacity-100" id="solid">
+         </div>
       </div>
 
 
@@ -40,7 +41,7 @@
                   Custom music
                </router-link>
             </li>
-            <li class="dropdown">
+            <li>
                <router-link :to="{ name: 'about' }">
                   The studios
                </router-link>

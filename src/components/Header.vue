@@ -1,21 +1,23 @@
 <!-- Header template -->
-
 <template>
-   <!-- Le container prend toute la place possible et s'adapte à la taille de l'écran -->
-   <div class="container-fluid">
-      <!-- Tous les éléments sont organisés par lignes -->
+
+   <div class="container-fluid" id="header">
+
+      <!-- Logo -->
       <div class="row">
-         <div class="col col-3 mx-auto pt-4">
+         <div class="col-3 mx-auto pt-4">
             <img src="../assets/images/YBP_head_logo.png">
          </div>
       </div>
+
+      <!-- Séparateur -->
       <div class="row">
-         <div class="col col-4 mx-auto pt-2">
-            <hr class="solid">
-         </div>        
+         <div class="col-4 mx-auto g-4">
+            <hr class="border-2 opacity-100" id="solid">
+         </div>
       </div>
 
-
+      <!-- Menu -->
       <div class="menu_main">
          <ul>
             <li>
@@ -40,7 +42,7 @@
                   Custom music
                </router-link>
             </li>
-            <li class="dropdown">
+            <li>
                <router-link :to="{ name: 'about' }">
                   The studios
                </router-link>
@@ -58,8 +60,56 @@
    </div>
 </template>
 
-<script>
-export default {
-   name: "Header",
-};
-</script>
+<style scoped>
+#solid {
+   color: #fda400;
+}
+
+.menu_main {
+   margin-left: auto;
+   margin-right: auto;
+   z-index: 1;
+   display: block;
+   position: relative;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   padding-left: 0;
+   list-style: none;
+   width: 100%;
+   text-align: center;
+}
+
+ul {
+   margin: 0px;
+   padding: 0px;
+   list-style: none;
+   display: inline-flex;
+}
+
+li {
+   position: relative;
+   float: left;
+   padding: 10px;
+   font-size: 18px;
+   text-transform: uppercase;
+   color: #fff;
+   border-radius: 40px;
+}
+
+li a {
+   color: #ffffff;
+   padding: 10px 20px;
+   border-radius: 5px;
+   display: inline-block;
+   box-sizing: border-box;
+   transition: transform 0.3s, background-color 0.3s, border 0.3s;
+}
+
+li a:hover {
+   color: #ffffff;
+   background-color: #000000;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   transform: scale(1.1);
+}
+</style>

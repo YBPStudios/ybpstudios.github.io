@@ -1,4 +1,5 @@
 <script setup>
+import Card from './Card.vue';
 defineProps({
     title: String,
     message: String
@@ -6,14 +7,14 @@ defineProps({
 </script>
 
 <template>
-    <div class="about_section p-2">
-        <div class="container_about">
-            <div class="col-md-6 mx-auto">
-                <h1 class="about_taital">{{ title }}</h1>
-                <p class="about_text">{{ message }}
-                </p>
-                <div class="readmore_bt"><a href="#">Read More</a></div>
-            </div>
-        </div>
+    <div class="col-md-6 p-2" id="carousel">
+        <Card :title="title" :message="message" />
     </div>
 </template>
+
+<style scoped>
+#carousel {
+    position: relative;
+    left: 270px;
+}
+</style>

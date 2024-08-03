@@ -59,8 +59,47 @@ background-color: black;
 }
 
 #background {
-    /* height: 1000px; */
     background-image: url(../assets/images/banner-bg.png);
     background-size: cover;
+}
+
+.banner_title {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: auto;
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner_text {
+    margin: 0 auto;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.read_bt {
+    height: 150px;
+}
+
+.read_bt a {
+    height: 47px;
+    font-size: 16px;
+    color: #141414;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 30px;
+    font-weight: 400;
+}
+
+.read_bt a:hover {
+    background-color: #2b2278;
+    color: #ffffff;
 }
 </style>

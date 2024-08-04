@@ -1,25 +1,27 @@
 <script setup>
 import Header from '@/components/Header.vue';
+import Card from '@/components/Card.vue';
 </script>
 
 <template>
-    <div class="page"><img class="bg_image" src="../assets/images/bg2.jpg">
-        <Header></Header>
-
-        <!-- custom music section start -->
-        <div class="services_section layout_padding">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="services_taital">
-                            <h1 class="services_taital">Personnalize your music</h1>
-                            <p class="about_text">Get your own music for your project !</p>
-                            <div class="readmore_bt"><a href="#">Read More</a></div>
-                        </div>
-                    </div>
+    <div class="container-fluid p-0" id="custom_music">
+        <div class="container-fluid p-0" id="background">
+            <div class="container_brightness">
+                <!-- Menu -->
+                <Header />
+                <!-- custom music section start -->
+                <div class="row px-4 layout_padding">
+                    <Card title="Personnalize your music" message="Get your own music for your project !" />
                 </div>
+                <!-- custom music section end -->
             </div>
         </div>
-        <!-- custom music section end -->
     </div>
 </template>
+
+<style scoped>
+#background {
+    background-image: url(../assets/images/bg2.jpg);
+    background-size: cover;
+}
+</style>

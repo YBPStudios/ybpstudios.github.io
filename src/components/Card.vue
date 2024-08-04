@@ -38,23 +38,23 @@ defineProps({
     width: 170px;
     float: left;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .readmore_bt a {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #000d10;
-    text-align: center;
-    padding: 10px 0px;
-    border-radius: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
+   color: #ffffff;
+   padding: 10px 20px;
+   border-radius: 5px;
+   display: inline-block;
+   box-sizing: border-box;
+   transition: transform 0.3s, background-color 0.3s, border 0.3s;
 }
 
 .readmore_bt a:hover {
-    color: #ffffff;
-    background-color: #2b2278;
+   color: #ffffff;
+   background-color: #000000;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   transform: scale(1.1);
 }
 </style>

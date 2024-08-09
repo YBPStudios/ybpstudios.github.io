@@ -50,6 +50,11 @@ import CarouselCard from '@/components/CarouselCard.vue';
                 </button>
             </div>
         </div>
+
+            <div class="video-container">
+                <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
     </div>
 </template>
 

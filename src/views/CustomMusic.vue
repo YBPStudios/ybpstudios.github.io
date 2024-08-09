@@ -11,7 +11,46 @@ import Card from '@/components/Card.vue';
                 <Header />
                 <!-- custom music section start -->
                 <div class="row px-4 layout_padding">
-                    <Card title="Personnalize your music" message="Get your own music for your project !" />
+                    <Card title="Personnalize your music" message="Get your own music for your project !"/>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3>Youtube</h3>
+                                    <img src="../assets/images/youtub-icon.png" style="width: 50px;">
+                                </td>
+                                <td>
+                                    <h3>Content creator</h3>
+                                    <img src="../assets/images/content_creator.png" style="width: 50px;">
+                                </td>
+                                <td>
+                                    <h3>Company</h3>
+                                    <img src="../assets/images/Company_logo_final.png" style="width: 50px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Channel sound identity
+                                </td>
+                                <td>
+                                    Sound identity
+                                </td>
+                                <td>
+                                    Sound identity / Marketing
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Music from library
+                                </td>
+                                <td>
+                                    Music from library
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <!-- custom music section end -->
             </div>

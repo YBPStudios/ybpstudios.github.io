@@ -33,9 +33,9 @@
 } */
 
 @font-face {
-    font-family: "Nippo";
-    src: local("Nippo-Variable.ttf"),
-        url('../fonts/Nippo-Variable.ttf');
+    font-family: "Futura_Bold";
+    src: local("Futura_Bold_font.ttf"),
+        url('../fonts/Futura_Bold_font.ttf');
 }
 
 
@@ -71,7 +71,7 @@ body {
     font-size: 14px;
     line-height: 1.80857;
     font-weight: normal;
-    font-family: 'Nippo', sans-serif;
+    font-family: 'Futura_Bold', sans-serif;
     overflow-x: hidden;
 }
 
@@ -84,6 +84,7 @@ a {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    font-family: 'Futura_Bold', sans-serif;
 }
 
 h1,
@@ -104,27 +105,32 @@ h6 {
 
 h1 {
     font-size: 24px;
-    font-family: 'Nippo', sans-serif;
+    font-family: 'Futura_Bold', sans-serif;
 }
 
 h2 {
     font-size: 22px;
+    font-family: 'Futura_Bold', sans-serif;
 }
 
 h3 {
     font-size: 18px;
+    font-family: 'Futura_Bold', sans-serif;
 }
 
 h4 {
     font-size: 16px;
+    font-family: 'Futura_Bold', sans-serif;
 }
 
 h5 {
     font-size: 14px;
+    font-family: 'Futura_Bold', sans-serif;
 }
 
 h6 {
     font-size: 13px;
+    font-family: 'Futura_Bold', sans-serif;
 }
 
 h1 a,
@@ -136,6 +142,7 @@ h6 a {
     color: #212121;
     text-decoration: none !important;
     opacity: 1;
+    font-family: 'Futura_Bold', sans-serif;
 }
 
 button:focus {
@@ -148,7 +155,7 @@ ol {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    font-family: 'Nippo', sans-serif;
+    font-family: 'Futura_Bold', sans-serif;
 }
 
 p {
@@ -156,13 +163,14 @@ p {
     font-weight: 300;
     font-size: 15px;
     line-height: 24px;
-    font-family: 'Nippo', sans-serif;
+    font-family: 'Futura_Bold', sans-serif;
 }
 
 a {
     color: #222222;
     text-decoration: none;
     outline: none !important;
+    font-family: 'Futura_Bold', sans-serif;
 }
 
 a,
@@ -351,3 +359,37 @@ img {
     max-width: 80%;
     max-height: 80%;
 } */
+
+table {
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+td {
+    border: 2px solid black !important;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.video-container {
+    position: relative;
+    width: 80vw; /* Largeur du conteneur relative à la largeur de la fenêtre */
+    max-width: 800px; /* Largeur maximale */
+    height: 45vw; /* Hauteur basée sur la largeur pour maintenir le ratio 16:9 */
+    max-height: 450px; /* Hauteur maximale */
+    background: #000;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

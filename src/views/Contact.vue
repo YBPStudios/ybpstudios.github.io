@@ -40,7 +40,7 @@ import Header from '@/components/Header.vue';
 
 <style scoped>
 #background {
-    background-image: url(../assets/images/bg4.jpg);
+    background-image: url(../assets/images/bg2.jpg);
     background-size: cover;
 }
 

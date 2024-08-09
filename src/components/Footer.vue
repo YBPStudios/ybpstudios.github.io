@@ -18,7 +18,7 @@
                     <li><a href="#"><img src="../assets/images/fb-icon.png"></a></li>
                     <li><a href="#"><img src="../assets/images/twitter-icon.png"></a></li>
                     <li><a href="#"><img src="../assets/images/linkedin-icon.png"></a></li>
-                    <li><a href="#"><img src="../assets/images/instagram-icon.png"></a></li>
+                    <li><a href="https://www.instagram.com/ybpstudios/"><img src="../assets/images/instagram-icon.png"></a></li>
                 </ul>
             </div>
         </div>

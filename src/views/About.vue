@@ -21,7 +21,7 @@ import Card from '@/components/Card.vue';
 
 <style scoped>
 #background {
-   background-image: url(../assets/images/bg1.jpeg);
+   background-image: url(../assets/images/bg2.jpg);
    background-size: cover;
 }
 </style>

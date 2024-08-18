@@ -12,21 +12,21 @@ import Card from '@/components/Card.vue';
                 <!-- about section start -->
                 <div class="row px-4 layout_padding">
                     <Card title="About Us" message="Hey, we're two crazy young french composers who want to reach success !" />
-                    <p>
-                        What are you acquiring ?
-                    </p>
-                    <p>
-                        A unique professional top quality Original music track certified "made by human"
-                    </p>
-                    <p>
-                        Customized on your special requests...
-                    </p>
-                    <p>
-                        ...Produced by Experts Composers at YBP Studios in Paris...
-                    </p>
-                    <p>
-                        ...whom will be happy to help for any of your projects.
-                    </p>
+                    <div style="text-align: center;" class="container_brightness">
+                        <h1>What are you acquiring ?</h1>
+                        <p>
+                            A unique professional top quality Original music track certified "made by human"
+                        </p>
+                        <p>
+                            Customized on your special requests...
+                        </p>
+                        <p>
+                            ...Produced by Experts Composers at YBP Studios in Paris...
+                        </p>
+                        <p>
+                            ...whom will be happy to help for any of your projects.
+                        </p>
+                    </div>
                 </div>
                 <!-- about section end -->
             </div>
@@ -38,5 +38,9 @@ import Card from '@/components/Card.vue';
 #background {
    background-image: url(../assets/images/bg2.jpg);
    background-size: cover;
+}
+
+h1 {
+    color: white;
 }
 </style>

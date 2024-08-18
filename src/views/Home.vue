@@ -12,7 +12,7 @@ import CarouselCard from '@/components/CarouselCard.vue';
                 <!-- banner section start -->
                 <div class="container-fluid px-0 layout_padding">
                     <h1 class="banner_title">The future<br>original music</h1>
-                    <p class="banner_text">“So long as the human spirit thrives on this planet, music in some living
+                    <p class="banner_text" style="padding-top: 30px;">“So long as the human spirit thrives on this planet, music in some living
                         form
                         will accompany and sustain it.” Aaron Copland</p>
                     <p class="banner_text">“I should be sorry if I only entertained them. I wish to make them
@@ -50,27 +50,59 @@ import CarouselCard from '@/components/CarouselCard.vue';
                 </button>
             </div>
         </div>
-
-        <div class="video-container">
-            <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div style="width: 100%;">
+            <div class="video-container" style="padding-right: 0;">
+                <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
 
         <div>
-        <h2>Our Partners</h2>
-        <tr>
-            <td>
-                <img src="../assets/images/Logos_ref/archimuse.png" class="ref_logo">
-            </td>
-            <td>
-                <img src="../assets/images/Logos_ref/clermont.png" class="ref_logo">
-            </td>
-            <td>
-                <img src="../assets/images/Logos_ref/ecv.jpg" class="ref_logo">
-            </td>
-            <td>
-                <img>
-            </td>
-        </tr>
+            <h2>Our Partners</h2>
+            <partners_table>
+                <tr>
+                    <td>
+                        <a href="https://www.archimusebordeaux.com/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/archimuse.png" class="ref_logo" alt=""></a>
+                    </td>
+                    <td></td>
+                    <td>
+                        <a href="https://www.ecv.fr/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/ecv.jpg" class="ref_logo" alt=""></a>
+                    </td>
+                    <td></td>
+                    <td>
+                        <a href="https://www.coursflorent.fr/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/florent.jpg" class="ref_logo" alt=""></a>
+                    </td>
+                    <td></td>
+                    <td>
+                        <a href="https://www.arte.tv/fr/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/arte.png" class="ref_logo" alt=""></a>
+                    </td>
+                    <td></td>
+                    <td>
+                        <a href="https://www.ecole-pivaut.fr/?gclid=Cj0KCQjwqKuKBhCxARIsACf4XuHWFaccKvyaEg9-iOZHvBVCNviSP_weepe4_KiSAz8voumM9E17cucaAhpIEALw_wcB" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/pivaut.jpg" class="ref_logo" alt=""></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <a href="https://clermont-filmfest.org/en/global/home/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/clermont.png" class="ref_logo" alt=""></a>
+                    </td>
+                    <td></td>
+                    <td>
+                        <a href="https://www.annecy.org/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/festivalannecy.jpg" class="ref_logo" alt=""></a>
+                    </td>
+                    <td></td>
+                    <td>
+                        <a href="https://www.gobelins.fr/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/gobelins.jpg" class="ref_logo" alt=""></a>
+                    </td>
+                    <td></td>
+                    <td>
+                        <a href="https://www.piktura.fr/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/piktura.png" class="ref_logo" alt=""></a>
+                    </td>
+                    <td></td>
+                    <td>
+                        <a href="https://www.soundtrackcologne.de/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/stc.png" class="ref_logo" alt=""></a>
+                    </td>
+                </tr>
+            </partners_table>
         </div>
 
     </div>
@@ -95,7 +127,7 @@ background-color: black;
     font-size: 50px;
     color: #ffffff;
     text-transform: uppercase;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 8px rgb(255, 159, 1, 0.2);
 }
 
 .banner_text {

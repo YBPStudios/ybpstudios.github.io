@@ -44,7 +44,7 @@ import Card from '@/components/Card.vue';
                                     Personnalized original soundtrack <br> for ambitious projects
                                 </td>
                                 <td>
-                                    Idem
+                                    Personnalized original soundtrack <br> for ambitious projects
                                 </td>
                                 <td>
                                     Original soundtracks <br> for web promotional ad video

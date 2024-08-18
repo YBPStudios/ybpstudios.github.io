@@ -33,11 +33,10 @@
 } */
 
 @font-face {
-    font-family: "Futura_Bold";
-    src: local("Futura_Bold_font.ttf"),
-        url('../fonts/Futura_Bold_font.ttf');
+    font-family: "Montserrat-Medium";
+    src: local("Montserrat-Medium.ttf"),
+        url('../fonts/Montserrat-Medium.ttf');
 }
-
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
@@ -71,7 +70,7 @@ body {
     font-size: 14px;
     line-height: 1.80857;
     font-weight: normal;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
     overflow-x: hidden;
 }
 
@@ -84,7 +83,7 @@ a {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 
 h1,
@@ -105,32 +104,32 @@ h6 {
 
 h1 {
     font-size: 24px;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 
 h2 {
     font-size: 22px;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 
 h3 {
     font-size: 18px;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 
 h4 {
     font-size: 16px;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 
 h5 {
     font-size: 14px;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 
 h6 {
     font-size: 13px;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 
 h1 a,
@@ -142,7 +141,7 @@ h6 a {
     color: #212121;
     text-decoration: none !important;
     opacity: 1;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 
 button:focus {
@@ -155,7 +154,7 @@ ol {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 
 p {
@@ -163,14 +162,14 @@ p {
     font-weight: 300;
     font-size: 15px;
     line-height: 24px;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 
 a {
     color: #222222;
     text-decoration: none;
     outline: none !important;
-    font-family: 'Futura_Bold', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 
 a,
@@ -392,4 +391,11 @@ td {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.ref_logo {
+    display: block;
+    height: auto;
+    max-width: 100px;
+    width: 100%;
 }

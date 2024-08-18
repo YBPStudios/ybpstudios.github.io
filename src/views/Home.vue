@@ -11,7 +11,7 @@ import CarouselCard from '@/components/CarouselCard.vue';
                 <Header />
                 <!-- banner section start -->
                 <div class="container-fluid px-0 layout_padding">
-                    <h1 class="banner_title">The future of original music</h1>
+                    <h1 class="banner_title">The future<br>original music</h1>
                     <p class="banner_text">“So long as the human spirit thrives on this planet, music in some living
                         form
                         will accompany and sustain it.” Aaron Copland</p>
@@ -51,9 +51,27 @@ import CarouselCard from '@/components/CarouselCard.vue';
             </div>
         </div>
 
-            <div class="video-container">
-                <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+        <div class="video-container">
+            <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div>
+        <h2>Our Partners</h2>
+        <tr>
+            <td>
+                <img src="../assets/images/Logos_ref/archimuse.png" class="ref_logo">
+            </td>
+            <td>
+                <img src="../assets/images/Logos_ref/clermont.png" class="ref_logo">
+            </td>
+            <td>
+                <img src="../assets/images/Logos_ref/ecv.jpg" class="ref_logo">
+            </td>
+            <td>
+                <img>
+            </td>
+        </tr>
+        </div>
 
     </div>
 </template>
@@ -71,11 +89,11 @@ background-color: black;
 .banner_title {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    width: auto;
+    width: 500px;
+    margin: 0 auto;
     text-align: center;
     font-size: 50px;
     color: #ffffff;
-    font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -105,6 +123,10 @@ background-color: black;
 
 .read_bt a:hover {
     background-color: #2b2278;
+    color: #ffffff;
+}
+
+h2 {
     color: #ffffff;
 }
 </style>

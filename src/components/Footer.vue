@@ -15,9 +15,7 @@
             </div>
             <div class="social_icon col-6 mx-auto">
                 <ul>
-                    <li><a href="#"><img src="../assets/images/fb-icon.png"></a></li>
-                    <li><a href="#"><img src="../assets/images/twitter-icon.png"></a></li>
-                    <li><a href="#"><img src="../assets/images/linkedin-icon.png"></a></li>
+                    <li><a href="https://www.youtube.com/@YellowBuoyProduction"><img src="../assets/images/youtub-icon.png"></a></li>
                     <li><a href="https://www.instagram.com/ybpstudios/"><img src="../assets/images/instagram-icon.png"></a></li>
                 </ul>
             </div>

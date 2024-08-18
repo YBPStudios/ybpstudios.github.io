@@ -41,10 +41,21 @@ import Card from '@/components/Card.vue';
                             </tr>
                             <tr>
                                 <td>
-                                    Music from library
+                                    Personnalized original soundtrack <br> for ambitious projects
                                 </td>
                                 <td>
-                                    Music from library
+                                    Idem
+                                </td>
+                                <td>
+                                    Original soundtracks <br> for web promotional ad video
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Created library track to fit your style
+                                </td>
+                                <td>
+                                    Created library track to fit your style
                                 </td>
                                 <td>
                                 </td>

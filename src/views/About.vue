@@ -12,6 +12,21 @@ import Card from '@/components/Card.vue';
                 <!-- about section start -->
                 <div class="row px-4 layout_padding">
                     <Card title="About Us" message="Hey, we're two crazy young french composers who want to reach success !" />
+                    <p>
+                        What are you acquiring ?
+                    </p>
+                    <p>
+                        A unique professional top quality Original music track certified "made by human"
+                    </p>
+                    <p>
+                        Customized on your special requests...
+                    </p>
+                    <p>
+                        ...Produced by Experts Composers at YBP Studios in Paris...
+                    </p>
+                    <p>
+                        ...whom will be happy to help for any of your projects.
+                    </p>
                 </div>
                 <!-- about section end -->
             </div>

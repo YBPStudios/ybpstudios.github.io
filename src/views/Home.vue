@@ -1,6 +1,19 @@
 <script setup>
 import Header from '@/components/Header.vue';
 import CarouselCard from '@/components/CarouselCard.vue';
+// import imageUrl from '@/assets/images/Logos_ref/archimuse.png'
+
+// import { ref } from 'vue'
+// const parentMessage = ref('Parent')
+// const items = ref([
+//     { message: 'https://www.archimusebordeaux.com/', image: "imageUrl" }, 
+//     { message: 'https://www.ecv.fr/', image:'../assets/images/Logos_ref/ecv.jpg' }])
+
+    // { website: 'https://www.archimusebordeaux.com/', image:'../assets/images/Logos_ref/archimuse.png' }, 
+    // { website: 'https://www.ecv.fr/', image:'../assets/images/Logos_ref/ecv.jpg' },
+    // { website: 'https://www.coursflorent.fr/', image:'../assets/images/Logos_ref/florent.jpg' },
+    // { website: 'https://www.arte.tv/fr/', image:'../assets/images/Logos_ref/arte.png' },
+    // { website: 'https://www.ecole-pivaut.fr/?gclid=Cj0KCQjwqKuKBhCxARIsACf4XuHWFaccKvyaEg9-iOZHvBVCNviSP_weepe4_KiSAz8voumM9E17cucaAhpIEALw_wcB', image:'../assets/images/Logos_ref/pivaut.jpg' }
 </script>
 
 <template>
@@ -12,7 +25,8 @@ import CarouselCard from '@/components/CarouselCard.vue';
                 <!-- banner section start -->
                 <div class="container-fluid px-0 layout_padding">
                     <h1 class="banner_title">The future<br>original music</h1>
-                    <p class="banner_text" style="padding-top: 30px;">“So long as the human spirit thrives on this planet, music in some living
+                    <p class="banner_text" style="padding-top: 30px;">“So long as the human spirit thrives on this
+                        planet, music in some living
                         form
                         will accompany and sustain it.” Aaron Copland</p>
                     <p class="banner_text">“I should be sorry if I only entertained them. I wish to make them
@@ -52,65 +66,183 @@ import CarouselCard from '@/components/CarouselCard.vue';
         </div>
         <div style="width: 100%;">
             <div class="video-container" style="padding-right: 0;">
-                <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
 
         <div>
             <h2>Our Partners</h2>
-            <partners_table>
-                <tr>
-                    <td>
-                        <a href="https://www.archimusebordeaux.com/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/archimuse.png" class="ref_logo" alt=""></a>
-                    </td>
-                    <td></td>
-                    <td>
-                        <a href="https://www.ecv.fr/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/ecv.jpg" class="ref_logo" alt=""></a>
-                    </td>
-                    <td></td>
-                    <td>
-                        <a href="https://www.coursflorent.fr/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/florent.jpg" class="ref_logo" alt=""></a>
-                    </td>
-                    <td></td>
-                    <td>
-                        <a href="https://www.arte.tv/fr/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/arte.png" class="ref_logo" alt=""></a>
-                    </td>
-                    <td></td>
-                    <td>
-                        <a href="https://www.ecole-pivaut.fr/?gclid=Cj0KCQjwqKuKBhCxARIsACf4XuHWFaccKvyaEg9-iOZHvBVCNviSP_weepe4_KiSAz8voumM9E17cucaAhpIEALw_wcB" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/pivaut.jpg" class="ref_logo" alt=""></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <a href="https://clermont-filmfest.org/en/global/home/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/clermont.png" class="ref_logo" alt=""></a>
-                    </td>
-                    <td></td>
-                    <td>
-                        <a href="https://www.annecy.org/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/festivalannecy.jpg" class="ref_logo" alt=""></a>
-                    </td>
-                    <td></td>
-                    <td>
-                        <a href="https://www.gobelins.fr/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/gobelins.jpg" class="ref_logo" alt=""></a>
-                    </td>
-                    <td></td>
-                    <td>
-                        <a href="https://www.piktura.fr/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/piktura.png" class="ref_logo" alt=""></a>
-                    </td>
-                    <td></td>
-                    <td>
-                        <a href="https://www.soundtrackcologne.de/" target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/stc.png" class="ref_logo" alt=""></a>
-                    </td>
-                </tr>
-            </partners_table>
+            <!-- <div class="container-fluid px-2">
+                <div class="row align-items-start">
+                    <div class="col">
+                    </div>
+                    <li class="col-2" v-for="item in items">
+                        <div class="col">
+                            <a :href="item.message" target="_blank"><img loading="lazy" :src="item.image" class="ref_logo" alt=""></a>
+                        </div>
+                        <div class="col">
+                        </div>
+                    </li>
+                    <div class="col">
+                        <a href="https://www.ecv.fr/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/ecv.jpg" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.coursflorent.fr/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/florent.jpg" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.arte.tv/fr/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/arte.png" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.ecole-pivaut.fr/?gclid=Cj0KCQjwqKuKBhCxARIsACf4XuHWFaccKvyaEg9-iOZHvBVCNviSP_weepe4_KiSAz8voumM9E17cucaAhpIEALw_wcB"
+                            target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/pivaut.jpg"
+                                class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+                <div class="row align-items-end">
+                    <div class="col">
+                        One of three columns
+                    </div>
+                    <div class="col">
+                        One of three columns
+                    </div>
+                    <div class="col">
+                        <a href="https://clermont-filmfest.org/en/global/home/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/clermont.png" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                        One of three columns
+                    </div>
+                    <div class="col">
+                        <a href="https://www.annecy.org/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/festivalannecy.jpg" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                        One of three columns
+                    </div>
+                    <div class="col">
+                        <a href="https://www.gobelins.fr/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/gobelins.jpg" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                        One of three columns
+                    </div>
+                    <div class="col">
+                        <a href="https://www.piktura.fr/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/piktura.png" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                        One of three columns
+                    </div>
+                    <div class="col">
+                        <a href="https://www.soundtrackcologne.de/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/stc.png" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                        One of three columns
+                    </div>
+                </div>
+            </div> -->
+            <div class="container-fluid px-2">
+                <div class="row align-items-start">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.archimusebordeaux.com/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/archimuse.png" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.ecv.fr/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/ecv.jpg" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.coursflorent.fr/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/florent.jpg" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.arte.tv/fr/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/arte.png" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.ecole-pivaut.fr/?gclid=Cj0KCQjwqKuKBhCxARIsACf4XuHWFaccKvyaEg9-iOZHvBVCNviSP_weepe4_KiSAz8voumM9E17cucaAhpIEALw_wcB"
+                            target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/pivaut.jpg"
+                                class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+                <div class="row align-items-end">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://clermont-filmfest.org/en/global/home/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/clermont.png" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.annecy.org/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/festivalannecy.jpg" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.gobelins.fr/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/gobelins.jpg" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.piktura.fr/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/piktura.png" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <a href="https://www.soundtrackcologne.de/" target="_blank"><img loading="lazy"
+                                src="../assets/images/Logos_ref/stc.png" class="ref_logo" alt=""></a>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 </template>
 
+
+
 <style scoped>
 #home {
-background-color: black;
+    background-color: black;
 }
 
 #background {
@@ -158,7 +290,10 @@ background-color: black;
     color: #ffffff;
 }
 
-h2 {
-    color: #ffffff;
+.ref_logo {
+    display: block;
+    height: auto;
+    max-width: 100px;
+    width: 100%;
 }
 </style>

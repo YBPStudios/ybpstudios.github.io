@@ -1,5 +1,5 @@
 <script setup>
-import "./assets/styles/main.css";
+
 import Footer from "./components/Footer.vue";
 import { RouterView } from "vue-router";
 </script>

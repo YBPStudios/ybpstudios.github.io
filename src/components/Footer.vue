@@ -6,7 +6,7 @@
             <div class="subscribe_bt"><a href="#">Subscribe</a></div>
         </div>
 
-        <div class="row p-4" id="footer-background">
+        <div class="row p-4">
             <div class="location_main col-6 mx-auto">
                 <div class="call_text"><img src="../assets/images/call-icon.png"></div>
                 <div class="call_text"><a href="#">Call +00 123456789</a></div>
@@ -27,11 +27,6 @@
 .footer_section {
     background-color: #000;
     z-index: -1;
-}
-
-#footer-background {
-    background-image: url(../assets/images/footer-bg.png);
-    background-size: cover;
 }
 
 .row {

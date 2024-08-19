@@ -30,7 +30,7 @@ const partners_2 = ([
                 <!-- banner section start -->
                 <div class="container-fluid px-0 layout_padding">
                     <h1 class="banner_title">The future<br>original music</h1>
-                    <p class="banner_text" style="padding-top: 30px;">“So long as the human spirit thrives on this
+                    <p class="banner_text">“So long as the human spirit thrives on this
                         planet, music in some living
                         form
                         will accompany and sustain it.” Aaron Copland</p>
@@ -67,7 +67,7 @@ const partners_2 = ([
                 </button>
             </div>
         </div>
-        <div class="card text-bg-dark bg-transparent mb-3">
+        <div class="card text-bg-dark bg-transparent mb-3 layout_padding">
             <div class="row g-0">
                 <div class="col-6 py-2">
                     <iframe class="video-container w-100" loading="lazy"
@@ -78,22 +78,18 @@ const partners_2 = ([
                 </div>
                 <div class="col-6">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        <h3 class="card-title">Trailer</h3>
+                        <p class="card-text">Presentation of our work.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="card text-bg-dark bg-transparent mb-3">
+        <div class="card text-bg-dark bg-transparent mb-3 layout_padding">
             <div class="row g-0">
                 <div class="col-6">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        <h3 class="card-title">Documentary</h3>
+                        <p class="card-text">Unique story, unique music.</p>
                     </div>
                 </div>
                 <div class="col-6 py-2">
@@ -106,9 +102,9 @@ const partners_2 = ([
             </div>
         </div>
 
-        <div id="partnersContainer">
-            <h2>Our Partners</h2>
-            <div class="col-10 mx-auto">
+        <div id="partnersContainer" class="layout_padding">
+            <h1 style="padding-left: 5%;">Our Partners</h1>
+            <div class="col-10 mx-auto layout_padding">
                 <ul class="list-group list-group-horizontal">
                     <!-- Première ligne images calées à droite avec float-end -->
                     <li class="image_partner" v-for="partner in partners_1">
@@ -140,14 +136,15 @@ const partners_2 = ([
 
 .banner_title {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    width: 500px;
+    padding: 30px;
+    width: fit-content;
     margin: 0 auto;
     text-align: center;
     font-size: 50px;
     color: #ffffff;
     text-transform: uppercase;
     box-shadow: 0 8px 8px rgb(255, 159, 1, 0.2);
+    letter-spacing: 15px;
 }
 
 .banner_text {
@@ -156,6 +153,7 @@ const partners_2 = ([
     color: #ffffff;
     text-align: center;
     margin-bottom: 10px;
+    padding-top: 30px;
 }
 
 .read_bt {

@@ -11,21 +11,24 @@ import Card from '@/components/Card.vue';
                 <Header />
                 <!-- about section start -->
                 <div class="row px-4 layout_padding">
-                    <Card title="About Us" message="Hey, we're two crazy young french composers who want to reach success !" />
+                    <Card title="About Us"
+                        message="Hey, we're two crazy young french composers who want to reach success !" />
                     <div style="text-align: center;" class="container_brightness">
-                        <h1>What are you acquiring ?</h1>
-                        <p>
-                            A unique professional top quality Original music track certified "made by human"
-                        </p>
-                        <p>
-                            Customized on your special requests...
-                        </p>
-                        <p>
-                            ...Produced by Experts Composers at YBP Studios in Paris...
-                        </p>
-                        <p>
-                            ...whom will be happy to help for any of your projects.
-                        </p>
+                        <div class="background_black" style="margin: 0 auto; width: fit-content; border: 2px solid #ff9f01; padding: 50px;">
+                            <h1>What are you acquiring ?</h1>
+                            <p>
+                                A unique professional top quality Original music track certified "made by human"
+                            </p>
+                            <p>
+                                Customized on your special requests...
+                            </p>
+                            <p>
+                                ...Produced by Experts Composers at YBP Studios in Paris...
+                            </p>
+                            <p>
+                                ...whom will be happy to help for any of your projects.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <!-- about section end -->
@@ -36,8 +39,12 @@ import Card from '@/components/Card.vue';
 
 <style scoped>
 #background {
-   background-image: url(../assets/images/bg2.jpg);
-   background-size: cover;
+    background-image: url(../assets/images/bg2.jpg);
+    background-size: cover;
+}
+
+.background_black {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 h1 {

@@ -8,15 +8,13 @@
 
         <div class="row p-4">
             <div class="location_main col-6 mx-auto">
-                <div class="call_text"><img src="../assets/images/call-icon.png"></div>
-                <div class="call_text"><a href="#">Call +00 123456789</a></div>
                 <div class="call_text"><img src="../assets/images/mail-icon.png"></div>
                 <div class="call_text"><a href="#">yellowbuoyproduction@gmail.com</a></div>
             </div>
             <div class="social_icon col-6 mx-auto">
                 <ul>
                     <li><a href="https://www.youtube.com/@YellowBuoyProduction"><img src="../assets/images/youtub-icon.png"></a></li>
-                    <li><a href="https://www.instagram.com/ybpstudios/"><img src="../assets/images/instagram-icon.png"></a></li>
+                    <li><a href="https://www.instagram.com/ybpstudios/">@ybpstudios <img src="../assets/images/instagram-icon.png"></a></li>
                 </ul>
             </div>
         </div>

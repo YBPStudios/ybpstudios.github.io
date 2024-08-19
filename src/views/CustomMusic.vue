@@ -11,7 +11,7 @@ import Card from '@/components/Card.vue';
                 <Header />
                 <!-- custom music section start -->
                 <div class="row px-4 layout_padding">
-                    <Card title="Personnalize your music" message="Get your own music for your project !"/>
+                    <Card title="Personnalize your music" message="Get your own music for your project !" />
                     <div>
                         <table>
                             <tr>
@@ -73,5 +73,24 @@ import Card from '@/components/Card.vue';
 #background {
     background-image: url(../assets/images/bg2.jpg);
     background-size: cover;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+td {
+    border: 2px solid #ff9f01;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+h3 {
+    color: black;
 }
 </style>

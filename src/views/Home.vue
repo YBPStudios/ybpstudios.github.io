@@ -57,24 +57,52 @@ const partners_2 = ([
                         <CarouselCard title="Custom your music" message="Get your own music for your project !" />
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
-        <div style="width: 100%;" id="videosContainer">
-            <div class="video-container" style="padding-right: 0;">
-                <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+        <div class="card text-bg-dark bg-transparent mb-3">
+            <div class="row g-0">
+                <div class="col-6 py-2">
+                    <iframe class="video-container w-100" loading="lazy"
+                        src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card text-bg-dark bg-transparent mb-3">
+            <div class="row g-0">
+                <div class="col-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="col-6 py-2">
+                    <iframe class="video-container w-100" loading="lazy"
+                        src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </div>
 
@@ -89,7 +117,7 @@ const partners_2 = ([
                     </li>
                 </ul>
                 <ul class="list-group list-group-horizontal">
-                     <!-- Deuxième ligne images calées à gauche avec float-start -->
+                    <!-- Deuxième ligne images calées à gauche avec float-start -->
                     <li class="image_partner" v-for="partner in partners_2">
                         <a :href="partner.message" target="_blank"><img loading="lazy" :src="getImgUrl(partner.image)"
                                 class="col-6 float-start" alt=""></a>
@@ -152,5 +180,9 @@ const partners_2 = ([
 
 .image_partner {
     width: 20%;
+}
+
+.video-container {
+    height: 450px;
 }
 </style>

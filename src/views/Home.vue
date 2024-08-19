@@ -1,19 +1,24 @@
 <script setup>
 import Header from '@/components/Header.vue';
 import CarouselCard from '@/components/CarouselCard.vue';
-// import imageUrl from '@/assets/images/Logos_ref/archimuse.png'
 
-// import { ref } from 'vue'
-// const parentMessage = ref('Parent')
-// const items = ref([
-//     { message: 'https://www.archimusebordeaux.com/', image: "imageUrl" }, 
-//     { message: 'https://www.ecv.fr/', image:'../assets/images/Logos_ref/ecv.jpg' }])
+// Gestion des partners
+const getImgUrl = (imageNameWithExtension) => new URL(`../assets/images/Logos_ref/${imageNameWithExtension}`, import.meta.url).href;
+const partners_1 = ([
+    { website: 'https://www.archimusebordeaux.com/', image: 'archimuse.png' },
+    { website: 'https://www.ecv.fr/', image: 'ecv.jpg' },
+    { website: 'https://www.coursflorent.fr/', image: 'florent.jpg' },
+    { website: 'https://www.arte.tv/fr/', image: 'arte.png' },
+    { website: 'https://www.ecole-pivaut.fr/?gclid=Cj0KCQjwqKuKBhCxARIsACf4XuHWFaccKvyaEg9-iOZHvBVCNviSP_weepe4_KiSAz8voumM9E17cucaAhpIEALw_wcB', image: 'pivaut.jpg' }
+])
+const partners_2 = ([
+    { website: 'https://clermont-filmfest.org/en/global/home/', image: 'clermont.png' },
+    { website: 'https://www.annecy.org/', image: 'festivalannecy.jpg' },
+    { website: 'https://www.gobelins.fr/', image: 'gobelins.jpg' },
+    { website: 'https://www.piktura.fr/', image: 'piktura.png' },
+    { website: 'https://www.soundtrackcologne.de/', image: 'stc.png' }
+])
 
-    // { website: 'https://www.archimusebordeaux.com/', image:'../assets/images/Logos_ref/archimuse.png' }, 
-    // { website: 'https://www.ecv.fr/', image:'../assets/images/Logos_ref/ecv.jpg' },
-    // { website: 'https://www.coursflorent.fr/', image:'../assets/images/Logos_ref/florent.jpg' },
-    // { website: 'https://www.arte.tv/fr/', image:'../assets/images/Logos_ref/arte.png' },
-    // { website: 'https://www.ecole-pivaut.fr/?gclid=Cj0KCQjwqKuKBhCxARIsACf4XuHWFaccKvyaEg9-iOZHvBVCNviSP_weepe4_KiSAz8voumM9E17cucaAhpIEALw_wcB', image:'../assets/images/Logos_ref/pivaut.jpg' }
 </script>
 
 <template>
@@ -41,8 +46,8 @@ import CarouselCard from '@/components/CarouselCard.vue';
             </div>
         </div>
 
-        <div class="row p-4 mt-5">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="row p-4 mt-5" id="carouselContainer">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <CarouselCard title="About Us" message="Hey, we're two crazy young french composers who want to reach
@@ -52,193 +57,76 @@ import CarouselCard from '@/components/CarouselCard.vue';
                         <CarouselCard title="Custom your music" message="Get your own music for your project !" />
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
-        <div style="width: 100%;">
-            <div class="video-container" style="padding-right: 0;">
-                <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+        <div class="card text-bg-dark bg-transparent mb-3">
+            <div class="row g-0">
+                <div class="col-6 py-2">
+                    <iframe class="video-container w-100" loading="lazy"
+                        src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card text-bg-dark bg-transparent mb-3">
+            <div class="row g-0">
+                <div class="col-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="col-6 py-2">
+                    <iframe class="video-container w-100" loading="lazy"
+                        src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </div>
 
-        <div>
+        <div id="partnersContainer">
             <h2>Our Partners</h2>
-            <!-- <div class="container-fluid px-2">
-                <div class="row align-items-start">
-                    <div class="col">
-                    </div>
-                    <li class="col-2" v-for="item in items">
-                        <div class="col">
-                            <a :href="item.message" target="_blank"><img loading="lazy" :src="item.image" class="ref_logo" alt=""></a>
-                        </div>
-                        <div class="col">
-                        </div>
+            <div class="col-10 mx-auto">
+                <ul class="list-group list-group-horizontal">
+                    <!-- Première ligne images calées à droite avec float-end -->
+                    <li class="image_partner" v-for="partner in partners_1">
+                        <a :href="partner.message" target="_blank"><img loading="lazy" :src="getImgUrl(partner.image)"
+                                class="col-6 float-end" alt=""></a>
                     </li>
-                    <div class="col">
-                        <a href="https://www.ecv.fr/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/ecv.jpg" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.coursflorent.fr/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/florent.jpg" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.arte.tv/fr/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/arte.png" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.ecole-pivaut.fr/?gclid=Cj0KCQjwqKuKBhCxARIsACf4XuHWFaccKvyaEg9-iOZHvBVCNviSP_weepe4_KiSAz8voumM9E17cucaAhpIEALw_wcB"
-                            target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/pivaut.jpg"
-                                class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                    </div>
-                </div>
-                <div class="row align-items-end">
-                    <div class="col">
-                        One of three columns
-                    </div>
-                    <div class="col">
-                        One of three columns
-                    </div>
-                    <div class="col">
-                        <a href="https://clermont-filmfest.org/en/global/home/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/clermont.png" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                        One of three columns
-                    </div>
-                    <div class="col">
-                        <a href="https://www.annecy.org/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/festivalannecy.jpg" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                        One of three columns
-                    </div>
-                    <div class="col">
-                        <a href="https://www.gobelins.fr/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/gobelins.jpg" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                        One of three columns
-                    </div>
-                    <div class="col">
-                        <a href="https://www.piktura.fr/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/piktura.png" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                        One of three columns
-                    </div>
-                    <div class="col">
-                        <a href="https://www.soundtrackcologne.de/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/stc.png" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                        One of three columns
-                    </div>
-                </div>
-            </div> -->
-            <div class="container-fluid px-2">
-                <div class="row align-items-start">
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.archimusebordeaux.com/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/archimuse.png" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.ecv.fr/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/ecv.jpg" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.coursflorent.fr/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/florent.jpg" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.arte.tv/fr/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/arte.png" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.ecole-pivaut.fr/?gclid=Cj0KCQjwqKuKBhCxARIsACf4XuHWFaccKvyaEg9-iOZHvBVCNviSP_weepe4_KiSAz8voumM9E17cucaAhpIEALw_wcB"
-                            target="_blank"><img loading="lazy" src="../assets/images/Logos_ref/pivaut.jpg"
-                                class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                    </div>
-                </div>
-                <div class="row align-items-end">
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://clermont-filmfest.org/en/global/home/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/clermont.png" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.annecy.org/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/festivalannecy.jpg" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.gobelins.fr/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/gobelins.jpg" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.piktura.fr/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/piktura.png" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                    <div class="col">
-                        <a href="https://www.soundtrackcologne.de/" target="_blank"><img loading="lazy"
-                                src="../assets/images/Logos_ref/stc.png" class="ref_logo" alt=""></a>
-                    </div>
-                    <div class="col">
-                    </div>
-                </div>
+                </ul>
+                <ul class="list-group list-group-horizontal">
+                    <!-- Deuxième ligne images calées à gauche avec float-start -->
+                    <li class="image_partner" v-for="partner in partners_2">
+                        <a :href="partner.message" target="_blank"><img loading="lazy" :src="getImgUrl(partner.image)"
+                                class="col-6 float-start" alt=""></a>
+                    </li>
+                </ul>
             </div>
         </div>
-
     </div>
 </template>
-
-
 
 <style scoped>
 #home {
@@ -290,10 +178,11 @@ import CarouselCard from '@/components/CarouselCard.vue';
     color: #ffffff;
 }
 
-.ref_logo {
-    display: block;
-    height: auto;
-    max-width: 100px;
-    width: 100%;
+.image_partner {
+    width: 20%;
+}
+
+.video-container {
+    height: 450px;
 }
 </style>

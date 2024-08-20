@@ -205,6 +205,30 @@ img {
     min-width: 1000px;
 }
 
+.readmore_bt {
+    width: 170px;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.readmore_bt a {
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: transform 0.3s, background-color 0.3s, border 0.3s;
+}
+
+.readmore_bt a:hover {
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transform: scale(1.1);
+}
+
 /* library section start */
 
 /* .library_section {

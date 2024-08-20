@@ -55,10 +55,15 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
-/* * {
-    box-sizing: border-box !important;
-    transition: ease all 0.5s;
-} */
+* {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    /* box-sizing: border-box !important;
+    transition: ease all 0.5s; */
+}
 
 html {
     scroll-behavior: smooth;
@@ -86,7 +91,18 @@ a {
     font-family: 'Montserrat-Medium', sans-serif;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
     font-family: 'Montserrat-Medium', sans-serif;
     letter-spacing: 0;
     font-weight: normal;
@@ -96,7 +112,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     line-height: normal;
     color: #ffffff;
     margin: 0
-  }
+}
 
 h1 {
     font-size: 40px;

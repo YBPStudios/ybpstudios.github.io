@@ -1,6 +1,6 @@
 <script setup>
 import Header from '@/components/Header.vue';
-import CarouselCard from '@/components/CarouselCard.vue';
+import Card from '@/components/Card.vue';
 
 // Gestion des partners
 const getImgUrl = (imageNameWithExtension) => new URL(`../assets/images/Logos_ref/${imageNameWithExtension}`, import.meta.url).href;
@@ -36,9 +36,6 @@ const partners_2 = ([
                         will accompany and sustain it.”<br><i>Aaron Copland</i></p>
                     <p class="banner_text">“I should be sorry if I only entertained them. I wish to make them
                         better.”<br><i>Georg Frideric Handel</i></p>
-                    <div class="read_bt row align-items-end pb-2">
-                        <a class="nav-link col-2 mx-auto" href="custom_music.html">Custom Music</a>
-                    </div>
                 </div>
                 <!-- banner section end -->
             </div>
@@ -48,11 +45,23 @@ const partners_2 = ([
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <CarouselCard title="About Us" message="Hey, we're two crazy young french composers who want to reach
-                                        success !" />
+                        <div class="carouselCard col-md-6 p-2">
+                            <Card title="About Us" message="Hey, we're two crazy young french composers who want to reach
+                            success !">
+                                <router-link :to="{ name: 'about' }">
+                                    Read More
+                                </router-link>
+                            </Card>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <CarouselCard title="Custom your music" message="Get your own music for your project !" />
+                        <div class="carouselCard col-md-6 p-2">
+                            <Card title="Custom your music" message="Get your own music for your project !">
+                                <router-link :to="{ name: 'custom_music' }">
+                                    Read More
+                                </router-link>
+                            </Card>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -65,6 +74,7 @@ const partners_2 = ([
                 </button>
             </div>
         </div>
+
         <div class="card text-bg-dark bg-transparent mb-3 layout_padding">
             <div class="row g-0">
                 <div class="col-6 py-2">
@@ -105,16 +115,20 @@ const partners_2 = ([
             <div class="col-10 mx-auto layout_padding">
                 <ul class="list-group list-group-horizontal">
                     <!-- Première ligne images calées à droite avec float-end -->
-                    <li class="image_partner" v-for="partner in partners_1">
-                        <a :href="partner.message" target="_blank"><img loading="lazy" :src="getImgUrl(partner.image)"
-                                class="col-6 float-end" alt=""></a>
+                    <li class="li_partner" v-for="partner in partners_1">
+                        <div class="col-6 float-end p-3">
+                            <a :href="partner.message" target="_blank"><img loading="lazy"
+                                    :src="getImgUrl(partner.image)" class="image mx-auto d-block" alt=""></a>
+                        </div>
                     </li>
                 </ul>
                 <ul class="list-group list-group-horizontal">
                     <!-- Deuxième ligne images calées à gauche avec float-start -->
-                    <li class="image_partner" v-for="partner in partners_2">
-                        <a :href="partner.message" target="_blank"><img loading="lazy" :src="getImgUrl(partner.image)"
-                                class="col-6 float-start" alt=""></a>
+                    <li class="li_partner" v-for="partner in partners_2">
+                        <div class="col-6 float-start p-3">
+                            <a :href="partner.message" target="_blank"><img loading="lazy"
+                                    :src="getImgUrl(partner.image)" class="image mx-auto d-block" alt=""></a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -154,6 +168,11 @@ const partners_2 = ([
     padding-top: 30px;
 }
 
+.carouselCard {
+    position: relative;
+    left: 270px;
+}
+
 .read_bt {
     height: 150px;
 }
@@ -174,7 +193,7 @@ const partners_2 = ([
     color: #ffffff;
 }
 
-.image_partner {
+.li_partner {
     width: 20%;
 }
 

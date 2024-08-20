@@ -1,21 +1,30 @@
 <template>
     <div class="footer_section pt-5">
 
-        <div class="input_btn_main">
-            <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
-            <div class="subscribe_bt"><a href="#">Subscribe</a></div>
-        </div>
-
-        <div class="row p-4">
-            <div class="location_main col-6 mx-auto">
-                <div class="call_text"><img src="../assets/images/mail-icon.png"></div>
-                <div class="call_text"><a href="#">yellowbuoyproduction@gmail.com</a></div>
+        <div style="padding-top: 50px;">
+            <div class="input_btn_main">
+                <input type="email" class="mail_text" id="emailInput" placeholder="Enter your email" required>
+                <div class="subscribe_bt"><a
+                        href="mailto:yellowbuoyproduction@gmail.com?subject=Subscription Request&body=Hi,%0D%0A%0D%0AI would like to subscribe to your Newsletters.%0D%0A%0D%0ACordially,">Subscribe</a>
+                </div>
             </div>
-            <div class="social_icon col-6 mx-auto">
-                <ul>
-                    <li><a href="https://www.youtube.com/@YellowBuoyProduction"><img src="../assets/images/youtub-icon.png"></a></li>
-                    <li><a href="https://www.instagram.com/ybpstudios/">@ybpstudios <img src="../assets/images/instagram-icon.png"></a></li>
-                </ul>
+
+            <div class="row p-4">
+                <div class="location_main col-6 mx-auto" style="padding-top: 50px;">
+                    <div class="call_text"><img src="../assets/images/mail-icon.png"></div>
+                    <div class="call_text"><a
+                            href="mailto:yellowbuoyproduction@gmail.com">yellowbuoyproduction@gmail.com</a></div>
+                </div>
+                <div class="social_icon col-6 mx-auto" style="text-align: center;">
+                    <ul>
+                        <li><a href="https://www.youtube.com/@YellowBuoyProduction" style="padding: 5px;"><img
+                                    src="../assets/images/youtube-app-white-icon.png" style="width: 20px;">
+                                &nbsp;@YellowBuoyProduction</a></li>
+                        <li><a href="https://www.instagram.com/ybpstudios/" style="padding: 5px;"><img
+                                    src="../assets/images/instagram-white-icon.png" style="width: 20px;">
+                                &nbsp;@ybpstudios</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

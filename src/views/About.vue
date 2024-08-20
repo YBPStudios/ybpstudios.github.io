@@ -11,10 +11,13 @@ import Card from '@/components/Card.vue';
                 <Header />
                 <!-- about section start -->
                 <div class="row px-4 layout_padding">
-                    <Card title="About Us"
-                        message="Hey, we're two crazy young french composers who want to reach success !" />
+                    <div class="title">
+                        <Card title="About Us"
+                            message="Hey, we're two crazy young french composers who want to reach success !" />
+                    </div>
                     <div style="text-align: center;" class="container_brightness">
-                        <div class="background_black" style="margin: 0 auto; width: fit-content; border: 2px solid #ff9f01; padding: 50px;">
+                        <div class="background_black"
+                            style="margin: 0 auto; width: fit-content; border: 2px solid #ff9f01cc; padding: 50px;">
                             <h1>What are you acquiring ?</h1>
                             <p>
                                 A unique professional top quality Original music track certified "made by human"
@@ -44,10 +47,15 @@ import Card from '@/components/Card.vue';
 }
 
 .background_black {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 h1 {
     color: white;
+}
+
+.title {
+    margin-left: 100px;
+    padding-bottom: 100px;
 }
 </style>

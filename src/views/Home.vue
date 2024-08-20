@@ -33,11 +33,9 @@ const partners_2 = ([
                     <p class="banner_text">“So long as the human spirit thrives on this
                         planet, music in some living
                         form
-                        will accompany and sustain it.” Aaron Copland</p>
+                        will accompany and sustain it.”<br><i>Aaron Copland</i></p>
                     <p class="banner_text">“I should be sorry if I only entertained them. I wish to make them
-                        better.”
-                        Georg
-                        Frideric Handel</p>
+                        better.”<br><i>Georg Frideric Handel</i></p>
                     <div class="read_bt row align-items-end pb-2">
                         <a class="nav-link col-2 mx-auto" href="custom_music.html">Custom Music</a>
                     </div>

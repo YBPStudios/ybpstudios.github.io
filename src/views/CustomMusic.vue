@@ -11,20 +11,22 @@ import Card from '@/components/Card.vue';
                 <Header />
                 <!-- custom music section start -->
                 <div class="row px-4 layout_padding">
-                    <Card title="Personnalize your music" message="Get your own music for your project !" />
+                    <div class="title">
+                        <Card title="Personnalize your music" message="Get your own music for your project !" />
+                    </div>
                     <div>
                         <table>
                             <tr>
                                 <td>
-                                    <h3>Youtube</h3>
+                                    <h2>Youtube</h2>
                                     <img src="../assets/images/youtub-icon.png" style="width: 50px;">
                                 </td>
                                 <td>
-                                    <h3>Content creator</h3>
+                                    <h2>Content creator</h2>
                                     <img src="../assets/images/content_creator.png" style="width: 50px;">
                                 </td>
                                 <td>
-                                    <h3>Company</h3>
+                                    <h2>Company</h2>
                                     <img src="../assets/images/Company_logo_final.png" style="width: 50px;">
                                 </td>
                             </tr>
@@ -84,13 +86,18 @@ table {
 }
 
 td {
-    border: 2px solid #ff9f01;
+    border: 2px solid #ff9f01cc;
     padding: 20px;
     text-align: center;
     color: black;
 }
 
-h3 {
+h2 {
     color: black;
+}
+
+.title {
+    margin-left: 100px;
+    padding-bottom: 100px;
 }
 </style>

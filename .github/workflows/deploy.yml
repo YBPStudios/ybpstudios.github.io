@@ -20,6 +20,9 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
+      - name: Install Bootstrap
+        uses: npm install bootstrap
+
       - name: Build project
         run: npm run build
 

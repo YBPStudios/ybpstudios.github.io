@@ -117,7 +117,7 @@ const partners_2 = ([
                     <!-- Première ligne images calées à droite avec float-end -->
                     <li class="li_partner" v-for="partner in partners_1">
                         <div class="col-6 float-end p-3">
-                            <a :href="partner.message" target="_blank"><img loading="lazy"
+                            <a :href="partner.website" target="_blank"><img loading="lazy"
                                     :src="getImgUrl(partner.image)" class="image mx-auto d-block" alt=""></a>
                         </div>
                     </li>
@@ -126,7 +126,7 @@ const partners_2 = ([
                     <!-- Deuxième ligne images calées à gauche avec float-start -->
                     <li class="li_partner" v-for="partner in partners_2">
                         <div class="col-6 float-start p-3">
-                            <a :href="partner.message" target="_blank"><img loading="lazy"
+                            <a :href="partner.website" target="_blank"><img loading="lazy"
                                     :src="getImgUrl(partner.image)" class="image mx-auto d-block" alt=""></a>
                         </div>
                     </li>

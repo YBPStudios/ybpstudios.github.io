@@ -8,7 +8,7 @@ import { RouterView } from "vue-router";
       <!-- GENERAL INFO -->
        <meta charset="utf-8">
        <meta name="YellowBuoyProduction Studios" content="YBP Studios is a french music studio specialized for media Soundtracks (films, animation film, documentaries, video games, ads...). Unique story, unique music.">
-       <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+       <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
    </head>
    <!-- Page loading -->
    <!-- <div id="loading-overlay">

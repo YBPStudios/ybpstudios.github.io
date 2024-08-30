@@ -13,23 +13,21 @@
                     <div class="call_text" style="font-size: 18px;"><a
                             href="https://ybpstudios.com/#/contact">yellowbuoyproduction@gmail.com</a></div>
                 </div>
-
-                <div class="social_icon col-6 mx-auto" style="text-align: center; padding-top: 40px;">
-                    <ul>
-                        <li><a href="https://www.youtube.com/@YellowBuoyProduction"
-                                style="padding-right: 10px; font-size: 13px;"><img
-                                    src="../assets/images/youtube-app-white-icon.png" style="width: 20px;">
-                                &nbsp;@YellowBuoyProduction</a></li>
-                        <li><a href="https://www.instagram.com/ybpstudios/"
-                                style="padding-left: 10px; font-size: 13px;"><img
-                                    src="../assets/images/instagram-white-icon.png" style="width: 20px;">
-                                &nbsp;@ybpstudios</a></li>
-                    </ul>
-                </div>
             </div>
 
-            <h4>@ 2024 YellowBuoyProduction. All rights reserved.</h4>
-
+            <div class="social_icon col-6 mx-auto" style="text-align: center; padding-top: 40px;">
+                <ul>
+                    <li><a href="https://www.youtube.com/@YellowBuoyProduction"
+                            style="padding-right: 10px; font-size: 13px;"><img
+                                src="../assets/images/youtube-app-white-icon.png" style="width: 20px;">
+                            &nbsp;@YellowBuoyProduction</a></li>
+                    <li><a href="https://www.instagram.com/ybpstudios/"
+                            style="padding-left: 10px; font-size: 13px;"><img
+                                src="../assets/images/instagram-white-icon.png" style="width: 20px;">
+                            &nbsp;@ybpstudios</a></li>
+                </ul>
+                <h4>@ 2024 YellowBuoyProduction. All rights reserved.</h4>
+            </div>
         </div>
     </div>
 </template>

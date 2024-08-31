@@ -1,6 +1,6 @@
 <template>
     <div class="footer_section pt-5">
-
+        <hr>
         <div style="padding-top: 10px;">
             <div>
                 <h1>Contact us / Follow us</h1>
@@ -11,20 +11,26 @@
                 <div class="location_main col-6 mx-auto" style="padding-top: 20px;">
                     <div class="call_text"><img src="../assets/images/mail-icon.png"></div>
                     <div class="call_text" style="font-size: 18px;"><a
-                            href="https://ybpstudios.com/#/contact">yellowbuoyproduction@gmail.com</a></div>
+                            href="https://ybpstudios.com/#/contact">guillianmarquer.composer@ybpstudios.com</a></div>
+                    <div class="call_text" style="font-size: 18px;"><a
+                            href="https://ybpstudios.com/#/contact">thomaspeyrounette.composer@ybpstudios.com</a></div>
                 </div>
             </div>
 
             <div class="social_icon col-6 mx-auto" style="text-align: center; padding-top: 40px;">
                 <ul>
-                    <li><a href="https://www.youtube.com/@YellowBuoyProduction"
-                            style="padding-right: 10px; font-size: 13px;"><img
-                                src="../assets/images/youtube-app-white-icon.png" style="width: 20px;">
-                            &nbsp;@YellowBuoyProduction</a></li>
-                    <li><a href="https://www.instagram.com/ybpstudios/"
-                            style="padding-left: 10px; font-size: 13px;"><img
-                                src="../assets/images/instagram-white-icon.png" style="width: 20px;">
-                            &nbsp;@ybpstudios</a></li>
+                    <li>
+                        <div class="call_text"><a href="https://www.youtube.com/@YellowBuoyProduction"
+                                style="padding-right: 10px; font-size: 13px;"><img
+                                    src="../assets/images/youtube-app-white-icon.png" style="width: 20px;">
+                                &nbsp;@YellowBuoyProduction</a></div>
+                    </li>
+                    <li>
+                        <div class="call_text"><a href="https://www.instagram.com/ybpstudios/"
+                                style="padding-left: 10px; font-size: 13px;"><img
+                                    src="../assets/images/instagram-white-icon.png" style="width: 20px;">
+                                &nbsp;@ybpstudios</a></div>
+                    </li>
                 </ul>
                 <h4>@ 2024 YellowBuoyProduction. All rights reserved.</h4>
             </div>

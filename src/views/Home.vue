@@ -112,7 +112,7 @@ const partners_2 = ([
 
         <div id="partnersContainer" class="layout_padding">
             <h1 style="padding-left: 5%;">Our Partners</h1>
-            <div class="col-10 mx-auto layout_padding">
+            <div class="col-10 mx-auto" style="padding-top: 30px;">
                 <ul class="list-group list-group-horizontal">
                     <!-- Première ligne images calées à droite avec float-end -->
                     <li class="li_partner" v-for="partner in partners_1">
@@ -194,7 +194,8 @@ const partners_2 = ([
 }
 
 .li_partner {
-    width: 20%;
+    width: 16%;
+    margin: 0 auto;
 }
 
 .video-container {

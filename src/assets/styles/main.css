@@ -151,6 +151,13 @@ h6 a {
     font-family: 'Montserrat-Medium', sans-serif;
 }
 
+hr {
+    height: 5px;
+    background-color: #fda400;
+    z-index: 100;
+    border: none;
+}
+
 button:focus {
     outline: none;
 }

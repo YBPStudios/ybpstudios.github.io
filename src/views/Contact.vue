@@ -22,7 +22,7 @@ function sendEmail() {
     const encodedMessage = encodeURIComponent(message.value);
 
     // Mailto with pre-filled informations
-    const mailtoLink = `mailto:yellowbuoyproduction@gmail.com?subject=${encodedSubject}&body=${encodedMessage}%0D%0A%0D%0A%0D%0A---%0D%0A${encodedName}%0D%0APhone: ${encodedPhone}%0D%0AEmail: ${encodedEmail}`;
+    const mailtoLink = `mailto:guillianmarquer.composer@ybpstudios.com,thomaspeyrounette.composer@ybpstudios.com?subject=${encodedSubject}&body=${encodedMessage}%0D%0A%0D%0A%0D%0A---%0D%0A${encodedName}%0D%0APhone: ${encodedPhone}%0D%0AEmail: ${encodedEmail}`;
 
     // Open the mailto link in the default email client
     window.location.href = mailtoLink;
@@ -42,17 +42,17 @@ function sendEmail() {
                         <div class="col-8 mx-auto">
                             <h1 class="contact_title">Request A Call Back</h1>
                             <div class="contact_subtitle" style="padding-bottom: 50px;">Informations above will pre-fill your email.<br>
-                                Feel free to enter necessary informations to let us reach you back.</div>
+                                *Feel free to enter necessary informations to let us reach you back.</div>
                             <div class="email_text">
                                 <div class="form-group">
                                     <input type="text" v-model="name" class="email-bt" placeholder="Name" id="name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" v-model="phone" class="email-bt" placeholder="Phone Number"
+                                    <input type="text" v-model="phone" class="email-bt" placeholder="Phone Number*"
                                         id="phone">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" v-model="email" class="email-bt" placeholder="Email" id="email">
+                                    <input type="email" v-model="email" class="email-bt" placeholder="Email*" id="email">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" v-model="subject" class="email-bt" placeholder="Message Subject"

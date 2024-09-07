@@ -31,9 +31,7 @@ const partners_2 = ([
                 <!-- banner section start -->
                 <div class="container-fluid px-0 layout_padding">
                     <h1 class="banner_title">The future<br>original music</h1>
-                    <h2 class="banner_text"
-                        style="font-size: 35px; font-variant: small-caps; font-family: Montserrat-Light; padding-top: 80px; font-style: oblique;">
-                        Triumph of quality over quantity</h2>
+                    <h2 class="banner_text">Triumph of quality over quantity</h2>
                     <!-- <p class="banner_text">“So long as the human spirit thrives on this
                         planet, music in some living
                         form
@@ -47,7 +45,7 @@ const partners_2 = ([
 
         <div class="row" id="carouselContainer">
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner container_brightness" style="padding-top: 100px;">
+                <div class="carousel-inner container_brightness" style="">
                     <div class="carousel-item active p-4 mt-5">
                         <div class="carouselCard col-md-6 p-2">
                             <Card title="About Us" message="Hey, we're two crazy young french composers who want to reach
@@ -83,15 +81,24 @@ const partners_2 = ([
             <div class="row g-0">
                 <div class="col-6 py-2">
                     <iframe class="video-container w-100" loading="lazy"
-                        src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player"
+                        src="https://www.youtube-nocookie.com/embed/v4V3o8hRdg4" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <div class="col-6">
                     <div class="card-body">
-                        <h3 class="card-title">Trailer</h3>
-                        <p class="card-text">Presentation of different types of media we've worked on.</p>
+                        <h3 class="card-title">Showreel</h3>
+                        <p class="card-text">Here is a showreel to present our work !<br>
+                            We offer custom music on different types of project.<br>
+                        <br>
+                        - Immerse people into your world -<br>
+                        - Boost your influence with a sound identity for your brand -<br>
+                        - Make your landscapes look magical -<br>
+                        - Bring your characters to life -<br>
+                        - Custom your music to fit your images -<br>
+                        - Create your unique emotion -<br>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -190,11 +197,14 @@ const partners_2 = ([
 
 .banner_text {
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 35px;
+    font-variant: small-caps;
+    font-family: Montserrat-Light;
+    font-style: oblique;
     color: #ffffff;
     text-align: center;
     margin-bottom: 10px;
-    padding-top: 30px;
+    padding-top: 80px;
 }
 
 .carouselCard {
@@ -229,5 +239,9 @@ const partners_2 = ([
 
 .video-container {
     height: 450px;
+}
+
+.carousel-inner {
+    padding-top: 100px;
 }
 </style>

@@ -1,6 +1,7 @@
 <script setup>
 import Header from '@/components/Header.vue';
 import Card from '@/components/Card.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -12,7 +13,7 @@ import Card from '@/components/Card.vue';
                 <!-- custom music section start -->
                 <div class="row px-4 layout_padding">
                     <div class="title">
-                        <Card title="Personnalize your music" message="Get your own music for your project !" />
+                        <Card title="Personalize your music" message="Get your own music for your project !" />
                     </div>
                     <div>
                         <table>
@@ -43,10 +44,10 @@ import Card from '@/components/Card.vue';
                             </tr>
                             <tr>
                                 <td>
-                                    Personnalized original soundtrack <br> for ambitious projects
+                                    Personalized original soundtrack <br> for ambitious projects
                                 </td>
                                 <td>
-                                    Personnalized original soundtrack <br> for ambitious projects
+                                    Personalized original soundtrack <br> for ambitious projects
                                 </td>
                                 <td>
                                     Original soundtracks <br> for web promotional ad video
@@ -69,12 +70,14 @@ import Card from '@/components/Card.vue';
             </div>
         </div>
     </div>
+
+    <Footer />
+
 </template>
 
 <style scoped>
 #background {
-    background-image: url(../assets/images/bg2.jpg);
-    background-size: cover;
+    background-image: url(../assets/images/Cinematic_Montage-min.png);
 }
 
 table {

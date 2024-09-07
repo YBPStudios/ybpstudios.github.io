@@ -1,6 +1,7 @@
 <script setup>
 import Header from '@/components/Header.vue';
 import { ref } from 'vue';
+import Footer from '@/components/Footer.vue';
 
 // Sending pre-fill email
 
@@ -41,7 +42,7 @@ function sendEmail() {
                     <div class="row px-4 layout_padding">
                         <div class="col-8 mx-auto">
                             <h1 class="contact_title">Request A Call Back</h1>
-                            <div class="contact_subtitle" style="padding-bottom: 50px;">Informations above will pre-fill your email.<br>
+                            <div class="contact_subtitle pb-4">Informations above will pre-fill your email.<br>
                                 *Feel free to enter necessary informations to let us reach you back.</div>
                             <div class="email_text">
                                 <div class="form-group">
@@ -73,12 +74,14 @@ function sendEmail() {
             </div>
         </div>
     </div>
+
+    <Footer />
+
 </template>
 
 <style scoped>
 #background {
-    background-image: url(../assets/images/bg2.jpg);
-    background-size: cover;
+    background-image: url(../assets/images/Abstract_background-min.png);
 }
 
 .contact_title {
@@ -130,6 +133,7 @@ function sendEmail() {
 .send_btn {
     width: 170px;
     margin: 0 auto;
+    margin-bottom: 10px;
     text-align: center;
 }
 

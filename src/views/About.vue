@@ -1,6 +1,7 @@
 <script setup>
 import Header from '@/components/Header.vue';
 import Card from '@/components/Card.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -23,13 +24,13 @@ import Card from '@/components/Card.vue';
                                 A unique professional top quality Original music track certified "made by human"
                             </p>
                             <p>
-                                Customized on your special requests...
+                                - Customized on your special requests -
                             </p>
                             <p>
-                                ...Produced by Experts Composers at YBP Studios in Paris...
+                                - Produced by Experts Composers at YBP Studios in Paris -
                             </p>
                             <p>
-                                ...whom will be happy to help for any of your projects.
+                                - whom will be happy to help for any of your projects -
                             </p>
                         </div>
                     </div>
@@ -38,12 +39,14 @@ import Card from '@/components/Card.vue';
             </div>
         </div>
     </div>
+
+    <Footer />
+
 </template>
 
 <style scoped>
 #background {
-    background-image: url(../assets/images/bg2.jpg);
-    background-size: cover;
+    background-image: url(../assets/images/Cinematic_Montage-min.png);
 }
 
 .background_black {

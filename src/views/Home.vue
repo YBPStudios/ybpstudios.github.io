@@ -1,6 +1,7 @@
 <script setup>
 import Header from '@/components/Header.vue';
 import Card from '@/components/Card.vue';
+import Footer from '@/components/Footer.vue';
 
 // Gestion des partners
 const getImgUrl = (imageNameWithExtension) => new URL(`../assets/images/Logos_ref/${imageNameWithExtension}`, import.meta.url).href;
@@ -22,29 +23,32 @@ const partners_2 = ([
 </script>
 
 <template>
-    <div class="container-fluid p-0" id="home">
-        <div class="container-fluid p-0" id="background">
+    <div class="container-fluid p-0" id="background">
+        <div class="container-fluid p-0">
             <div class="container_brightness">
                 <!-- Menu -->
                 <Header />
                 <!-- banner section start -->
                 <div class="container-fluid px-0 layout_padding">
                     <h1 class="banner_title">The future<br>original music</h1>
-                    <p class="banner_text">“So long as the human spirit thrives on this
+                    <h2 class="banner_text"
+                        style="font-size: 35px; font-variant: small-caps; font-family: Montserrat-Light; padding-top: 80px; font-style: oblique;">
+                        Triumph of quality over quantity</h2>
+                    <!-- <p class="banner_text">“So long as the human spirit thrives on this
                         planet, music in some living
                         form
                         will accompany and sustain it.”<br><i>Aaron Copland</i></p>
                     <p class="banner_text">“I should be sorry if I only entertained them. I wish to make them
-                        better.”<br><i>Georg Frideric Handel</i></p>
+                        better.”<br><i>Georg Frideric Handel</i></p> -->
                 </div>
                 <!-- banner section end -->
             </div>
         </div>
 
-        <div class="row p-4 mt-5" id="carouselContainer">
+        <div class="row" id="carouselContainer">
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div class="carousel-inner container_brightness" style="padding-top: 100px;">
+                    <div class="carousel-item active p-4 mt-5">
                         <div class="carouselCard col-md-6 p-2">
                             <Card title="About Us" message="Hey, we're two crazy young french composers who want to reach
                             success !">
@@ -54,7 +58,7 @@ const partners_2 = ([
                             </Card>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item p-4 mt-5">
                         <div class="carouselCard col-md-6 p-2">
                             <Card title="Custom your music" message="Get your own music for your project !">
                                 <router-link :to="{ name: 'custom_music' }">
@@ -75,7 +79,7 @@ const partners_2 = ([
             </div>
         </div>
 
-        <div class="card text-bg-dark bg-transparent mb-3 layout_padding">
+        <div class="card text-bg-dark bg-transparent layout_padding container_brightness">
             <div class="row g-0">
                 <div class="col-6 py-2">
                     <iframe class="video-container w-100" loading="lazy"
@@ -87,22 +91,49 @@ const partners_2 = ([
                 <div class="col-6">
                     <div class="card-body">
                         <h3 class="card-title">Trailer</h3>
-                        <p class="card-text">Presentation of our work.</p>
+                        <p class="card-text">Presentation of different types of media we've worked on.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="card text-bg-dark bg-transparent mb-3 layout_padding">
+
+        <div class="card text-bg-dark bg-transparent layout_padding container_brightness">
             <div class="row g-0">
                 <div class="col-6">
                     <div class="card-body">
-                        <h3 class="card-title">Documentary</h3>
-                        <p class="card-text">Unique story, unique music.</p>
+                        <h3 class="card-title">Video Games</h3>
+                        <p class="card-text">Presentation of some video games soundtracks that we've made for
+                            animation
+                            studients' projects from <a href="https://www.ecv.fr/lecole/lille/">ECV school</a> in
+                            Lille, France.<br>
+                            <br>
+                            First, a trailer and soundtracks of "The Epopee of Hylas", video game made by François
+                            Chapoule, Marie-Emilie Guilleman, Florian Soret and Edouard Stoppe in 2023.<br>
+                            <u>Synopsys :</u> <i>Hylas, a small humanoid feline, is tasked with repairing the
+                                various
+                                buildings on the islands ravaged by Hades, who has imprisoned the gods, preventing
+                                their
+                                intervention on Earth. Hylas will have the chance to prove himself by renovating the
+                                dwellings and restoring contact with the gods.</i><br>
+                            <br>
+                            Then soundtracks from "Take a Shot" produced by François Chapoule, Léo Gammel, Thomas
+                            Garrel, Pauline Grosdidier and Marie-Emilie Guilleman in 2022.<br>
+                            <u>Synopsys :</u> <i>A YouTuber and his friend visit an abandoned abbey to make a video.
+                                Soon, they realize that the place is not as deserted as it seems, and our hero finds
+                                himself isolated, with only a camera as his weapon.</i><br>
+                            <br>
+                            And a project called "Hikari" made by Floran Soret, Félix Leroy, François Chapoule and
+                            Lucas
+                            Flamein in 2021.<br>
+                            <u>Synopsys :</u> <i>Immersed in Japanese folklore during the Edo period, a young
+                                villager must save his village from darkness by restoring the light in a sacred
+                                temple held by the Shadow Oni.</i><br>
+                        </p>
                     </div>
                 </div>
                 <div class="col-6 py-2">
                     <iframe class="video-container w-100" loading="lazy"
-                        src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player"
+                        src="https://www.youtube-nocookie.com/embed/v11Orkj4Bik" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -110,7 +141,7 @@ const partners_2 = ([
             </div>
         </div>
 
-        <div id="partnersContainer" class="layout_padding">
+        <div id="partnersContainer" class="layout_padding container_brightness">
             <h1 style="padding-left: 5%;">Our Partners</h1>
             <div class="col-10 mx-auto" style="padding-top: 30px;">
                 <ul class="list-group list-group-horizontal">
@@ -134,28 +165,26 @@ const partners_2 = ([
             </div>
         </div>
     </div>
+    <Footer />
 </template>
 
 <style scoped>
-#home {
-    background-color: black;
-}
-
 #background {
-    background-image: url(../assets/images/banner-bg.png);
-    background-size: cover;
+    background-image: url(../assets/images/banner-bg_resized.png);
+    height: auto;
 }
 
 .banner_title {
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.4); */
     padding: 30px;
     width: fit-content;
     margin: 0 auto;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     color: #ffffff;
+    text-shadow: rgb(20, 20, 20);
     text-transform: uppercase;
-    box-shadow: 0 8px 8px rgb(255, 159, 1, 0.2);
+    /* box-shadow: 0 8px 8px rgb(255, 159, 1, 0.2); */
     letter-spacing: 15px;
 }
 

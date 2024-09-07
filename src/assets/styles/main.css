@@ -38,6 +38,12 @@
         url('../fonts/Montserrat-Medium.ttf');
 }
 
+@font-face {
+    font-family: "Montserrat-Light";
+    src: local("Montserrat-Light.ttf"),
+        url('../fonts/Montserrat-Light.ttf');
+}
+
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
 /* @import url(animate.min.css);
@@ -72,6 +78,7 @@ html {
 body {
     min-width: 1000px;
     color: #ffffff;
+    background-color: #000;
     font-size: 15px;
     line-height: 1.80857;
     font-weight: normal;
@@ -154,7 +161,6 @@ h6 a {
 hr {
     height: 5px;
     background-color: #fda400;
-    z-index: 100;
     border: none;
 }
 
@@ -214,6 +220,8 @@ img {
 .layout_padding {
     padding-top: 100px;
     padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .page {
@@ -416,3 +424,9 @@ img {
     width: 100%;
     height: 100%;
 } */
+
+#background {
+    background-size: cover;
+    width: 100%;
+    height: 1200px;
+}

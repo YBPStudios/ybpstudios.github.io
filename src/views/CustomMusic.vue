@@ -80,6 +80,10 @@ import Footer from '@/components/Footer.vue';
     background-image: url(../assets/images/Cinematic_Montage-min.png);
 }
 
+.container-brightness {
+    height: 1200px;
+}
+
 table {
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.6);

@@ -49,6 +49,10 @@ import Footer from '@/components/Footer.vue';
     background-image: url(../assets/images/Cinematic_Montage-min.png);
 }
 
+.container-brightness {
+    height: 1200px;
+}
+
 .background_black {
     background-color: rgba(0, 0, 0, 0.7);
 }

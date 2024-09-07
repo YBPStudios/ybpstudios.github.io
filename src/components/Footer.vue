@@ -1,15 +1,15 @@
 <template>
     <div class="container-fluid">
-        <hr style="margin-top: 0;">
+        <hr>
         <div style="padding-top: 10px;">
             <div>
-                <h1 style="font-size: 28px; padding-top: 20px;">Contact us / Follow us</h1>
+                <h1>Contact us / Follow us</h1>
             </div>
 
             <div class="row p-4">
 
-                <div class="location_main col-6 mx-auto" style="padding-top: 30px;">
-                    <div class="call_text"><img src="../assets/images/mail-icon.png"></div>
+                <div class="location_main col-6 mx-auto">
+                    <div class="call_text"><img src="../assets/images/mail-icon.png" style="width: 45px;"></div>
 
                     <router-link :to="{ name: 'contact' }" class="call_text">
                         guillianmarquer.composer@ybpstudios.com
@@ -21,24 +21,24 @@
 
                 </div>
 
-                <div class="social_icon col-6 mx-auto" style="text-align: center; padding-top: 30px;">
+                <div class="social_icon col-6 mx-auto">
                     <ul>
                         <li>
                             <div class="call_text"><a href="https://www.youtube.com/@YellowBuoyProduction"
-                                    style="padding-right: 10px; font-size: 13px;"><img
-                                        src="../assets/images/youtube-app-white-icon.png" style="width: 20px;">
+                                    style="padding-right: 10px;"><img
+                                        src="../assets/images/youtube-app-white-icon.png">
                                     &nbsp;@YellowBuoyProduction</a></div>
                         </li>
                         <li>
                             <div class="call_text"><a href="https://www.instagram.com/ybpstudios/"
-                                    style="padding-left: 10px; font-size: 13px;"><img
-                                        src="../assets/images/instagram-white-icon.png" style="width: 20px;">
+                                    style="padding-left: 10px;"><img
+                                        src="../assets/images/instagram-white-icon.png">
                                     &nbsp;@ybpstudios</a></div>
                         </li>
                     </ul>
                     <h4>© 2024 YellowBuoyProduction. All rights reserved.
                         <router-link :to="{ name: 'CGU' }">
-                            Terms and Conditions.
+                            <u>Terms and Conditions.</u>
                         </router-link>
                     </h4>
                 </div>
@@ -48,6 +48,15 @@
 </template>
 
 <style scoped>
+
+a {
+    font-size: 13px;
+}
+
+hr {
+    margin-top: 0;
+}
+
 .footer_section {
     object-fit: contain;
 }
@@ -68,6 +77,8 @@
 h1 {
     text-align: center;
     text-decoration: underline;
+    font-size: 28px;
+    padding-top: 20px;
 }
 
 .mail_text {
@@ -124,7 +135,7 @@ h1 {
 
 .location_main {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .call_text {
@@ -141,6 +152,10 @@ h1 {
 
 .call_text a:hover {
     color: #fda400;
+}
+
+.call_text img {
+    width: 20px;
 }
 
 h4 {

@@ -53,7 +53,8 @@ function sendEmail() {
                                         id="phone">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" v-model="email" class="email-bt" placeholder="Email*" id="email">
+                                    <input type="email" v-model="email" class="email-bt" placeholder="Email*"
+                                        id="email">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" v-model="subject" class="email-bt" placeholder="Message Subject"
@@ -82,6 +83,10 @@ function sendEmail() {
 <style scoped>
 #background {
     background-image: url(../assets/images/Abstract_background-min.png);
+}
+
+.container-brightness {
+    height: 1200px;
 }
 
 .contact_title {

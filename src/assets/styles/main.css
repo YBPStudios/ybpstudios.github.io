@@ -426,7 +426,9 @@ img {
 } */
 
 #background {
-    background-size: cover;
-    width: 100%;
     height: 1200px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

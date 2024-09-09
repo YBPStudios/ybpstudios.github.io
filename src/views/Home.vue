@@ -31,12 +31,12 @@ const partners_2 = ([
                 <!-- banner section start -->
                 <div class="container-fluid px-0 layout_padding">
                     <h1 class="banner_title">The future<br>original music</h1>
-                    <h2 class="banner_text">Triumph of quality over quantity</h2>
-                    <!-- <p class="banner_text">“So long as the human spirit thrives on this
+                    <h2 class="banner_text">Unique Story,<br>Unique Music.</h2>
+                    <!-- <p class="banner_quotes" style="padding-top: 50px;">“So long as the human spirit thrives on this
                         planet, music in some living
                         form
                         will accompany and sustain it.”<br><i>Aaron Copland</i></p>
-                    <p class="banner_text">“I should be sorry if I only entertained them. I wish to make them
+                    <p class="banner_quotes">“I should be sorry if I only entertained them. I wish to make them
                         better.”<br><i>Georg Frideric Handel</i></p> -->
                 </div>
                 <!-- banner section end -->
@@ -45,12 +45,11 @@ const partners_2 = ([
 
         <div class="row" id="carouselContainer">
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner container_brightness" style="">
+                <div class="carousel-inner container_brightness">
                     <div class="carousel-item active p-4 mt-5">
                         <div class="carouselCard col-md-6 p-2">
-                            <Card title="About Us" message="Hey, we're two crazy young french composers who want to reach
-                            success !">
-                                <router-link :to="{ name: 'about' }">
+                            <Card title="CUSTOM YOUR MUSIC" message="Get your own music for your project !">
+                                <router-link :to="{ name: 'custom_music' }">
                                     Read More
                                 </router-link>
                             </Card>
@@ -58,8 +57,9 @@ const partners_2 = ([
                     </div>
                     <div class="carousel-item p-4 mt-5">
                         <div class="carouselCard col-md-6 p-2">
-                            <Card title="Custom your music" message="Get your own music for your project !">
-                                <router-link :to="{ name: 'custom_music' }">
+                            <Card title="ABOUT US" message="Hey, we're two crazy young french composers who want to reach
+                            success !">
+                                <router-link :to="{ name: 'about' }">
                                     Read More
                                 </router-link>
                             </Card>
@@ -75,9 +75,18 @@ const partners_2 = ([
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <div class="btn_container container_brightness">
+                <div class="contact_btn">
+                    <router-link :to="{ name: 'contact' }">
+                        Ask for a quote
+                    </router-link>
+                </div>
+            </div>
         </div>
 
-        <div class="card text-bg-dark bg-transparent layout_padding container_brightness">
+        <hr>
+
+        <div class="card text-bg-dark bg-transparent container_brightness video_text">
             <div class="row g-0">
                 <div class="col-6 py-2">
                     <iframe class="video-container w-100" loading="lazy"
@@ -90,21 +99,24 @@ const partners_2 = ([
                     <div class="card-body">
                         <h3 class="card-title">Showreel</h3>
                         <p class="card-text">Here is a showreel to present our work !<br>
-                            We offer custom music on different types of project.<br>
-                        <br>
-                        - Immerse people into your world -<br>
-                        - Boost your influence with a sound identity for your brand -<br>
-                        - Make your landscapes look magical -<br>
-                        - Bring your characters to life -<br>
-                        - Custom your music to fit your images -<br>
-                        - Create your unique emotion -<br>
+                            We offer custom music on different types of projects.<br>
+                            <br>
+                            - Immerse people into your world -<br>
+                            - Boost your influence with a sound identity for your brand -<br>
+                            - Make your landscapes look magical -<br>
+                            - Bring your characters to life -<br>
+                            - Custom your music to fit your images -<br>
+                            - Create your unique emotion -<br>
+                            <br>
+                            <u>Show more...</u><br>
+                            Credits:
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card text-bg-dark bg-transparent layout_padding container_brightness">
+        <div class="card text-bg-dark bg-transparent container_brightness video_text" style="padding-bottom: 100px;">
             <div class="row g-0">
                 <div class="col-6">
                     <div class="card-body">
@@ -116,25 +128,15 @@ const partners_2 = ([
                             <br>
                             First, a trailer and soundtracks of "The Epopee of Hylas", video game made by François
                             Chapoule, Marie-Emilie Guilleman, Florian Soret and Edouard Stoppe in 2023.<br>
-                            <u>Synopsys :</u> <i>Hylas, a small humanoid feline, is tasked with repairing the
-                                various
-                                buildings on the islands ravaged by Hades, who has imprisoned the gods, preventing
-                                their
-                                intervention on Earth. Hylas will have the chance to prove himself by renovating the
-                                dwellings and restoring contact with the gods.</i><br>
                             <br>
                             Then soundtracks from "Take a Shot" produced by François Chapoule, Léo Gammel, Thomas
                             Garrel, Pauline Grosdidier and Marie-Emilie Guilleman in 2022.<br>
-                            <u>Synopsys :</u> <i>A YouTuber and his friend visit an abandoned abbey to make a video.
-                                Soon, they realize that the place is not as deserted as it seems, and our hero finds
-                                himself isolated, with only a camera as his weapon.</i><br>
                             <br>
                             And a project called "Hikari" made by Floran Soret, Félix Leroy, François Chapoule and
-                            Lucas
-                            Flamein in 2021.<br>
-                            <u>Synopsys :</u> <i>Immersed in Japanese folklore during the Edo period, a young
-                                villager must save his village from darkness by restoring the light in a sacred
-                                temple held by the Shadow Oni.</i><br>
+                            Lucas Flamein in 2021.<br>
+                            <br>
+                            <u>Show more...</u><br>
+                            Credits:
                         </p>
                     </div>
                 </div>
@@ -147,6 +149,16 @@ const partners_2 = ([
                 </div>
             </div>
         </div>
+
+        <div class="btn_container container_brightness">
+            <div class="contact_btn">
+                <router-link :to="{ name: 'contact' }">
+                    Ask for a quote
+                </router-link>
+            </div>
+        </div>
+
+        <hr>
 
         <div id="partnersContainer" class="layout_padding container_brightness">
             <h1 style="padding-left: 5%;">Our Partners</h1>
@@ -176,9 +188,22 @@ const partners_2 = ([
 </template>
 
 <style scoped>
+#partnersContainer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 #background {
     background-image: url(../assets/images/banner-bg_resized.png);
     height: auto;
+}
+
+hr {
+    height: 1px;
+    background-color: white;
+    opacity: 100%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .banner_title {
@@ -187,7 +212,7 @@ const partners_2 = ([
     width: fit-content;
     margin: 0 auto;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     color: #ffffff;
     text-shadow: rgb(20, 20, 20);
     text-transform: uppercase;
@@ -197,7 +222,7 @@ const partners_2 = ([
 
 .banner_text {
     margin: 0 auto;
-    font-size: 35px;
+    font-size: 30px;
     font-variant: small-caps;
     font-family: Montserrat-Light;
     font-style: oblique;
@@ -205,6 +230,11 @@ const partners_2 = ([
     text-align: center;
     margin-bottom: 10px;
     padding-top: 80px;
+    letter-spacing: 10px;
+}
+
+.banner_quotes {
+    text-align: center;
 }
 
 .carouselCard {
@@ -242,6 +272,35 @@ const partners_2 = ([
 }
 
 .carousel-inner {
+    padding-top: 100px;
+}
+
+.card-body {
+    margin-left: 10%;
+    margin-right: 20%;
+    text-align: justify;
+}
+
+.card-title {
+    margin: 0;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.btn_container {
+    width: 100%;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.video_text {
+    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 100px;
 }
 </style>

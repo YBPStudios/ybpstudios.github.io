@@ -64,11 +64,11 @@ function sendEmail() {
                                     <textarea v-model="message" class="message-bt" placeholder="Message" rows="5"
                                         id="message"></textarea>
                                 </div>
-                                <div class="send_btn">
-                                    <a href="javascript:void(0);" @click="sendEmail">SEND</a>
-                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="send_btn">
+                        <a href="javascript:void(0);" @click="sendEmail">SEND</a>
                     </div>
                 </div>
                 <!-- contact section end -->
@@ -85,8 +85,13 @@ function sendEmail() {
     background-image: url(../assets/images/Abstract_background-min.png);
 }
 
-.container-brightness {
+.container_brightness {
     height: 1200px;
+    backdrop-filter: brightness(50%);
+}
+
+.layout_padding {
+    padding-bottom: 30px;
 }
 
 .contact_title {
@@ -138,7 +143,6 @@ function sendEmail() {
 .send_btn {
     width: 170px;
     margin: 0 auto;
-    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -151,6 +155,7 @@ function sendEmail() {
     border-radius: 30px;
     background-color: #000d10;
     padding: 7px;
+    border: #fda400 solid;
 }
 
 .send_btn a:hover {

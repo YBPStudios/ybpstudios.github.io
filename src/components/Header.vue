@@ -13,7 +13,7 @@
       <!-- Séparateur -->
       <div class="row">
          <div class="col-4 mx-auto g-4">
-            <hr class="border-2 opacity-100" id="solid">
+            <hr class="opacity-100" id="solid">
          </div>
       </div>
 
@@ -61,6 +61,10 @@
 </template>
 
 <style scoped>
+hr {
+   height: 2px;
+}
+
 #solid {
    color: #fda400;
 }

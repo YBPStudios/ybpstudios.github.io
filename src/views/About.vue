@@ -13,12 +13,20 @@ import Footer from '@/components/Footer.vue';
                 <!-- about section start -->
                 <div class="row px-4 layout_padding">
                     <div class="title">
-                        <Card title="About Us"
-                            message="Hey, we're two crazy young french composers who want to reach success !" />
+                        <Card title="About us" />
+                        <p
+                            style="justify-content: center; width: 50%; margin: 0 auto; font-size: 20px; font-family: Montserrat-Light;">
+                            YBP is a recently launched music production studio based in Paris founded by two
+                            profesionnal composers. We promote original made-by-human creations and we take care
+                            producing refined soundtracks to help creators reach high quality projects.</p>
                     </div>
-                    <div style="text-align: center;" class="container_brightness">
-                        <div class="background_black"
-                            style="margin: 0 auto; width: fit-content; border: 2px solid #ff9f01cc; padding: 50px;">
+                    <div class="img_container">
+                        <img src="../assets/images/About_1.png">
+                        <img src="../assets/images/About_2.png">
+                    </div>
+                    <!-- <div style="text-align: center;">
+                             <div class="background_black"
+                            style="margin: 0 auto; width: fit-content; border: 2px solid #ff9f01cc; border-radius: 15px; padding: 50px;">
                             <h1>What are you acquiring ?</h1>
                             <p>
                                 A unique professional top quality Original music track certified "made by human"
@@ -33,6 +41,13 @@ import Footer from '@/components/Footer.vue';
                                 - whom will be happy to help for any of your projects -
                             </p>
                         </div>
+                    </div> -->
+                </div>
+                <div class="btn_container">
+                    <div class="contact_btn">
+                        <router-link :to="{ name: 'contact' }">
+                            Ask for a quote
+                        </router-link>
                     </div>
                 </div>
                 <!-- about section end -->
@@ -46,11 +61,16 @@ import Footer from '@/components/Footer.vue';
 
 <style scoped>
 #background {
-    background-image: url(../assets/images/Cinematic_Montage-min.png);
+    background-image: url(../assets/images/Bg/Bleu.png);
 }
 
-.container-brightness {
+.layout_padding {
+    padding-bottom: 0;
+}
+
+.container_brightness {
     height: 1200px;
+    backdrop-filter: brightness(50%);
 }
 
 .background_black {
@@ -62,7 +82,26 @@ h1 {
 }
 
 .title {
-    margin-left: 100px;
-    padding-bottom: 100px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.btn_container {
+    width: 100%;
+}
+
+img {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.img_container {
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    margin: 0 auto; 
+    width: fit-content;
+    border-radius: 15px;
 }
 </style>

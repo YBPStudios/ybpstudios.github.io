@@ -13,9 +13,13 @@ import Footer from '@/components/Footer.vue';
                 <!-- custom music section start -->
                 <div class="row px-4 layout_padding">
                     <div class="title">
-                        <Card title="Personalize your music" message="Get your own music for your project !" />
+                        <Card title="Get your own custom music for your project"/>
+                        <p style="justify-content: center; width: 50%; margin: 0 auto; font-size: 20px; font-family: Montserrat-Light;">Stop using lifeless library tracks, get instead your own personalized original music.</p>
                     </div>
-                    <div>
+                    <div class="img_container">
+                        <img src="../assets/images/Services.png">
+                    </div>
+                    <!-- <div>
                         <table>
                             <tr>
                                 <td>
@@ -64,7 +68,12 @@ import Footer from '@/components/Footer.vue';
                                 </td>
                             </tr>
                         </table>
-                    </div>
+                    </div> -->
+                </div>
+                <div class="contact_btn">
+                    <router-link :to="{ name: 'contact' }">
+                        Ask for a quote
+                    </router-link>
                 </div>
                 <!-- custom music section end -->
             </div>
@@ -77,11 +86,12 @@ import Footer from '@/components/Footer.vue';
 
 <style scoped>
 #background {
-    background-image: url(../assets/images/Cinematic_Montage-min.png);
+    background-image: url(../assets/images/Bg/rouge.png);
 }
 
-.container-brightness {
+.container_brightness {
     height: 1200px;
+    backdrop-filter: brightness(75%);
 }
 
 table {
@@ -104,7 +114,25 @@ h2 {
 }
 
 .title {
-    margin-left: 100px;
-    padding-bottom: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img_container {
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    margin: 0 auto; 
+    width: fit-content;
+    border-radius: 15px;
+}
+
+img {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.layout_padding {
+    padding-bottom: 30px;
 }
 </style>

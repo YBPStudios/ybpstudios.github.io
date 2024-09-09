@@ -92,16 +92,20 @@ h1 {
 }
 
 img {
-    width: 800px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
+    max-width: 800px;
+    max-height: 100%;
+    display: block;
 }
 
 .img_container {
-    padding: 20px;
-    height: fit-content;
-    display: flex;
-    margin: 0 auto; 
-    width: fit-content;
-    border-radius: 15px;
+    display: flex; /* Use flexbox to create a responsive container */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Align items vertically */
+    width: 100%; /* Full viewport width */
+    height: 100%; /* Full viewport height */
+    overflow: hidden; /* Hide overflow if the image is larger than the window */
 }
 </style>

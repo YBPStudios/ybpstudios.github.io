@@ -91,7 +91,7 @@ import Footer from '@/components/Footer.vue';
 
 .container_brightness {
     height: 1200px;
-    backdrop-filter: brightness(75%);
+    backdrop-filter: brightness(45%);
 }
 
 table {

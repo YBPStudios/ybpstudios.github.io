@@ -87,7 +87,7 @@ function sendEmail() {
 
 .container_brightness {
     height: 1200px;
-    backdrop-filter: brightness(50%);
+    backdrop-filter: brightness(40%);
 }
 
 .layout_padding {

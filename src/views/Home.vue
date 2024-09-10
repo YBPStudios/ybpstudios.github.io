@@ -43,7 +43,7 @@ const partners_2 = ([
             </div>
         </div>
 
-        <div class="row" id="carouselContainer">
+        <!-- <div class="row" id="carouselContainer">
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner container_brightness">
                     <div class="carousel-item active p-4 mt-5">
@@ -75,16 +75,14 @@ const partners_2 = ([
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <div class="btn_container container_brightness">
-                <div class="contact_btn">
-                    <router-link :to="{ name: 'contact' }">
-                        Ask for a quote
-                    </router-link>
-                </div>
+        </div> -->
+        <div class="btn_container container_brightness" style="padding-top: 100px;">
+            <div class="contact_btn">
+                <router-link :to="{ name: 'contact' }">
+                    Ask for a quote
+                </router-link>
             </div>
         </div>
-
-        <hr>
 
         <div class="card text-bg-dark bg-transparent container_brightness video_text">
             <div class="row g-0">
@@ -108,15 +106,15 @@ const partners_2 = ([
                             - Custom your music to fit your images -<br>
                             - Create your unique emotion -<br>
                             <br>
-                            <u>Show more...</u><br>
-                            Credits:
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card text-bg-dark bg-transparent container_brightness video_text" style="padding-bottom: 100px;">
+        <hr>
+
+        <div class="card text-bg-dark bg-transparent container_brightness video_text">
             <div class="row g-0">
                 <div class="col-6">
                     <div class="card-body">
@@ -135,8 +133,6 @@ const partners_2 = ([
                             And a project called "Hikari" made by Floran Soret, Félix Leroy, François Chapoule and
                             Lucas Flamein in 2021.<br>
                             <br>
-                            <u>Show more...</u><br>
-                            Credits:
                         </p>
                     </div>
                 </div>
@@ -302,5 +298,6 @@ hr {
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 </style>

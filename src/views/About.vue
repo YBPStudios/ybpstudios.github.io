@@ -21,8 +21,14 @@ import Footer from '@/components/Footer.vue';
                             producing refined soundtracks to help creators reach high quality projects.</p>
                     </div>
                     <div class="img_container">
-                        <img src="../assets/images/About_1.png">
-                        <img src="../assets/images/About_2.png">
+                        <tr>
+                            <td>
+                                <img src="../assets/images/About_1.png">
+                            </td>
+                            <td>
+                                <img src="../assets/images/About_2.png">
+                            </td>
+                        </tr>
                     </div>
                     <!-- <div style="text-align: center;">
                              <div class="background_black"
@@ -70,7 +76,7 @@ import Footer from '@/components/Footer.vue';
 
 .container_brightness {
     height: 1200px;
-    backdrop-filter: brightness(50%);
+    backdrop-filter: brightness(35%);
 }
 
 .background_black {
@@ -92,20 +98,14 @@ h1 {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin: 0 auto;
-    max-width: 800px;
-    max-height: 100%;
     display: block;
 }
 
 .img_container {
-    display: flex; /* Use flexbox to create a responsive container */
-    justify-content: center; /* Center the image */
-    align-items: center; /* Align items vertically */
-    width: 100%; /* Full viewport width */
-    height: 100%; /* Full viewport height */
-    overflow: hidden; /* Hide overflow if the image is larger than the window */
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
 }
 </style>

@@ -23,7 +23,7 @@ const partners_2 = ([
 </script>
 
 <template>
-    <div class="container-fluid p-0" id="background">
+    <div class="container-fluid p-0 col-xs-12 col-sm-12 col-md-12 col-lg-12" id="background">
         <div class="container-fluid p-0">
             <div class="container_brightness">
                 <!-- Menu -->

@@ -47,6 +47,23 @@ const partners_2 = ([
 
         <div class="card text-bg-dark bg-transparent container_brightness video_text">
             <div class="row g-0">
+                <div class="col-12 col-md-6 p-0" style="margin: 0 auto;">
+                    <div>
+                        <h3 class="card-title">YBP Studios - Trailer</h3>
+                    </div>
+                    <iframe class="video-container w-100" loading="lazy"
+                        src="https://www.youtube-nocookie.com/embed/GXXxHkQkqQk?vq=hd1080" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="card text-bg-dark bg-transparent container_brightness video_text">
+            <div class="row g-0">
                 <div class="col-12 col-md-6">
                     <iframe class="video-container w-100" loading="lazy"
                         src="https://www.youtube-nocookie.com/embed/v4V3o8hRdg4" title="YouTube video player"

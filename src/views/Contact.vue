@@ -82,7 +82,7 @@ function sendEmail() {
 
 <style scoped>
 #background {
-    background-image: url(../assets/images/Abstract_background-min.png);
+    background-image: url(../assets/images/Bg/Abstract_background.png);
 }
 
 .container_brightness {

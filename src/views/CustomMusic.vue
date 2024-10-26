@@ -19,63 +19,12 @@ import Footer from '@/components/Footer.vue';
                     <div class="img_container">
                         <img src="../assets/images/Services.png">
                     </div>
-                    <!-- <div>
-                        <table>
-                            <tr>
-                                <td>
-                                    <h2>Youtube</h2>
-                                    <img src="../assets/images/youtub-icon.png" style="width: 50px;">
-                                </td>
-                                <td>
-                                    <h2>Content creator</h2>
-                                    <img src="../assets/images/content_creator.png" style="width: 50px;">
-                                </td>
-                                <td>
-                                    <h2>Company</h2>
-                                    <img src="../assets/images/Company_logo_final.png" style="width: 50px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Channel sound identity
-                                </td>
-                                <td>
-                                    Sound identity
-                                </td>
-                                <td>
-                                    Sound identity / Marketing
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Personalized original soundtrack <br> for ambitious projects
-                                </td>
-                                <td>
-                                    Personalized original soundtrack <br> for ambitious projects
-                                </td>
-                                <td>
-                                    Original soundtracks <br> for web promotional ad video
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Created library track to fit your style
-                                </td>
-                                <td>
-                                    Created library track to fit your style
-                                </td>
-                                <td>
-                                </td>
-                            </tr>
-                        </table>
-                    </div> -->
                 </div>
                 <div class="contact_btn">
                     <router-link :to="{ name: 'contact' }">
                         Ask for a quote
                     </router-link>
                 </div>
-                <!-- custom music section end -->
             </div>
         </div>
     </div>
@@ -87,6 +36,7 @@ import Footer from '@/components/Footer.vue';
 <style scoped>
 #background {
     background-image: url(../assets/images/Bg/rouge.png);
+    height: auto;
 }
 
 .container_brightness {

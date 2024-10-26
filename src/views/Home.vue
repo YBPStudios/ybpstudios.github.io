@@ -23,7 +23,7 @@ const partners_2 = ([
 </script>
 
 <template>
-    <div class="container-fluid p-0 col-xs-12 col-sm-12 col-md-12 col-lg-12" id="background">
+    <div class="container-fluid p-0" id="background">
         <div class="container-fluid p-0">
             <div class="container_brightness">
                 <!-- Menu -->
@@ -32,50 +32,11 @@ const partners_2 = ([
                 <div class="container-fluid px-0 layout_padding">
                     <h1 class="banner_title">The future<br>original music</h1>
                     <h2 class="banner_text">Unique Story,<br>Unique Music.</h2>
-                    <!-- <p class="banner_quotes" style="padding-top: 50px;">“So long as the human spirit thrives on this
-                        planet, music in some living
-                        form
-                        will accompany and sustain it.”<br><i>Aaron Copland</i></p>
-                    <p class="banner_quotes">“I should be sorry if I only entertained them. I wish to make them
-                        better.”<br><i>Georg Frideric Handel</i></p> -->
                 </div>
                 <!-- banner section end -->
             </div>
         </div>
 
-        <!-- <div class="row" id="carouselContainer">
-            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner container_brightness">
-                    <div class="carousel-item active p-4 mt-5">
-                        <div class="carouselCard col-md-6 p-2">
-                            <Card title="CUSTOM YOUR MUSIC" message="Get your own music for your project !">
-                                <router-link :to="{ name: 'custom_music' }">
-                                    Read More
-                                </router-link>
-                            </Card>
-                        </div>
-                    </div>
-                    <div class="carousel-item p-4 mt-5">
-                        <div class="carouselCard col-md-6 p-2">
-                            <Card title="ABOUT US" message="Hey, we're two crazy young french composers who want to reach
-                            success !">
-                                <router-link :to="{ name: 'about' }">
-                                    Read More
-                                </router-link>
-                            </Card>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div> -->
         <div class="btn_container container_brightness" style="padding-top: 100px;">
             <div class="contact_btn">
                 <router-link :to="{ name: 'contact' }">
@@ -86,14 +47,18 @@ const partners_2 = ([
 
         <div class="card text-bg-dark bg-transparent container_brightness video_text">
             <div class="row g-0">
-                <div class="col-6 py-2">
+                <div class="col-12 col-md-6">
                     <iframe class="video-container w-100" loading="lazy"
                         src="https://www.youtube-nocookie.com/embed/v4V3o8hRdg4" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="col-6">
+
+                <!-- Line break only on smartphones -->
+                <div class="d-block d-md-none"></div>
+
+                <div class="col-12 col-md-6">
                     <div class="card-body">
                         <h3 class="card-title">Showreel</h3>
                         <p class="card-text">Here is a showreel to present our work !<br>
@@ -116,7 +81,7 @@ const partners_2 = ([
 
         <div class="card text-bg-dark bg-transparent container_brightness video_text">
             <div class="row g-0">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="card-body">
                         <h3 class="card-title">Video Games</h3>
                         <p class="card-text">Presentation of some video games soundtracks that we've made for
@@ -136,7 +101,11 @@ const partners_2 = ([
                         </p>
                     </div>
                 </div>
-                <div class="col-6 py-2">
+
+                <!-- Line break only on smartphones -->
+                <div class="d-block d-md-none"></div>
+
+                <div class="col-12 col-md-6">
                     <iframe class="video-container w-100" loading="lazy"
                         src="https://www.youtube-nocookie.com/embed/v11Orkj4Bik" title="YouTube video player"
                         frameborder="0"
@@ -159,6 +128,7 @@ const partners_2 = ([
         <div id="partnersContainer" class="layout_padding container_brightness">
             <h1 style="padding-left: 5%;">Our Partners</h1>
             <div class="col-10 mx-auto" style="padding-top: 30px;">
+
                 <ul class="list-group list-group-horizontal">
                     <!-- Première ligne images calées à droite avec float-end -->
                     <li class="li_partner" v-for="partner in partners_1">
@@ -168,6 +138,7 @@ const partners_2 = ([
                         </div>
                     </li>
                 </ul>
+
                 <ul class="list-group list-group-horizontal">
                     <!-- Deuxième ligne images calées à gauche avec float-start -->
                     <li class="li_partner" v-for="partner in partners_2">
@@ -177,6 +148,7 @@ const partners_2 = ([
                         </div>
                     </li>
                 </ul>
+
             </div>
         </div>
     </div>

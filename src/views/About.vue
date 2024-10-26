@@ -30,24 +30,6 @@ import Footer from '@/components/Footer.vue';
                             </td>
                         </tr>
                     </div>
-                    <!-- <div style="text-align: center;">
-                             <div class="background_black"
-                            style="margin: 0 auto; width: fit-content; border: 2px solid #ff9f01cc; border-radius: 15px; padding: 50px;">
-                            <h1>What are you acquiring ?</h1>
-                            <p>
-                                A unique professional top quality Original music track certified "made by human"
-                            </p>
-                            <p>
-                                - Customized on your special requests -
-                            </p>
-                            <p>
-                                - Produced by Experts Composers at YBP Studios in Paris -
-                            </p>
-                            <p>
-                                - whom will be happy to help for any of your projects -
-                            </p>
-                        </div>
-                    </div> -->
                 </div>
                 <div class="btn_container">
                     <div class="contact_btn">

@@ -5,40 +5,38 @@ import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
-    <div class="container-fluid p-0" id="custom_music">
-        <div class="container-fluid p-0" id="background">
-            <div class="container_brightness">
-                <!-- Menu -->
-                <Header />
-                <!-- about section start -->
-                <div class="row px-4 layout_padding">
-                    <div class="title">
-                        <Card title="About us" />
-                        <p
-                            style="justify-content: center; width: 50%; margin: 0 auto; font-size: 20px; font-family: Montserrat-Light;">
-                            YBP is a recently launched music production studio based in Paris founded by two
-                            profesionnal composers. We promote original made-by-human creations and we take care
-                            producing refined soundtracks to help creators reach high quality projects.</p>
+    <div id="background">
+        <div class="p-0 container_brightness">
+            <!-- Menu -->
+            <Header />
+            <!-- about section start -->
+            <div class="row mb-0">
+                <div class="title">
+                    <Card title="About us" />
+                    <p
+                        style="justify-content: center; width: 50%; margin: 0 auto; font-size: 20px; font-family: Montserrat-Light;">
+                        YBP is a recently launched music production studio based in Paris founded by two
+                        profesionnal composers. We promote original made-by-human creations and we take care
+                        producing refined soundtracks to help creators reach high quality projects.</p>
+                </div>
+
+                <div class="bg-transparent layout_padding">
+
+                    <div class="col-12 col-md-6" style="margin: 0 auto;">
+                        <img src="../assets/images/FAQ 1.png">
                     </div>
-                    <div class="img_container">
-                        <tr>
-                            <td>
-                                <img src="../assets/images/About_1.png">
-                            </td>
-                            <td>
-                                <img src="../assets/images/About_2.png">
-                            </td>
-                        </tr>
+
+                    <div class="col-12 col-md-6" style="margin: 0 auto;">
+                        <img src="../assets/images/FAQ 2.png">
                     </div>
                 </div>
-                <div class="btn_container">
+                <div class="contact_btn" style="padding-bottom: 100px;">
                     <div class="contact_btn">
                         <router-link :to="{ name: 'contact' }">
                             Ask for a quote
                         </router-link>
                     </div>
                 </div>
-                <!-- about section end -->
             </div>
         </div>
     </div>
@@ -49,15 +47,12 @@ import Footer from '@/components/Footer.vue';
 
 <style scoped>
 #background {
-    background-image: url(../assets/images/Bg/Bleu.png);
-}
-
-.layout_padding {
-    padding-bottom: 0;
+    background-image: url(../assets/images/Bg/Bleu1.png);
+    height: auto;
 }
 
 .container_brightness {
-    height: 1200px;
+    height: auto;
     backdrop-filter: brightness(35%);
 }
 
@@ -77,6 +72,7 @@ h1 {
 
 .btn_container {
     width: 100%;
+
 }
 
 img {
